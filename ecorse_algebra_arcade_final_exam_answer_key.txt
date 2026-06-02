@@ -1,0 +1,114 @@
+Ecorse Algebra Arcade Final Exam - Answer Key
+Grade denominator: 360 points. Total possible: 480 points. Minimum grade 50%; raw percent >= 90 becomes 100%.
+
+Teacher Lounge - Photocopier Prize Lounge (Easy, 4 points each)
+  LNG-D1 | Combining like terms | Answer: 5x + 9
+  LNG-D2 | One-step equation | Answer: x = 12
+  LNG-D3 | Identify a function | Answer: Yes, each input has one output
+  LNG-D4 | Slope from points | Answer: 2
+  LNG-D5 | Check a system solution | Answer: Yes
+
+Staff Bathroom - Mirror Maze Sink (Easy, 4 points each)
+  BTH-D1 | Evaluating expressions | Answer: 17
+  BTH-D2 | Solving inequalities | Answer: x > 13
+  BTH-D3 | Domain | Answer: {1, 2, 3}
+  BTH-D4 | Y-intercept | Answer: 8
+  BTH-D5 | Graphing a simple system | Answer: (3, 5)
+
+Mr. Doss - Slope Claw Machine (Easy, 4 points each)
+  DOS-D1 | Simplifying expressions | Answer: 5m + 2
+  DOS-D2 | Two-step equation | Answer: x = 6
+  DOS-D3 | Function notation | Answer: 10
+  DOS-D4 | Slope from points | Answer: 2
+  DOS-D5 | Number of solutions | Answer: No solution
+
+Ms. Deszi - Y-Intercept Snack Bar (Easy, 4 points each)
+  DSZ-D1 | Order of operations | Answer: 16
+  DSZ-D2 | Inequality with division | Answer: x <= 6
+  DSZ-D3 | Range | Answer: {7, 9}
+  DSZ-D4 | Slope-intercept form | Answer: 4
+  DSZ-D5 | Substitution idea | Answer: 8
+
+Mr. Turner - Horizontal Line Air Hockey (Easy, 4 points each)
+  TRN-D1 | Absolute value | Answer: 9
+  TRN-D2 | Variables on both sides, easy | Answer: x = 5
+  TRN-D3 | Function or not | Answer: No, x = 2 has two outputs
+  TRN-D4 | Horizontal line | Answer: y = -4
+  TRN-D5 | System solution meaning | Answer: The point that works in both equations
+
+Mr. Moore - Graph Match Skeeball (Easy, 4 points each)
+  MOR-D1 | Translate words | Answer: 2x + 5
+  MOR-D2 | No solution idea | Answer: No solution
+  MOR-D3 | Arithmetic sequence | Answer: 17
+  MOR-D4 | Vertical line | Answer: x = 6
+  MOR-D5 | Simple elimination | Answer: (4, 3)
+
+Mr. Green - Slope-Intercept Speedway (Standard, 6 points each)
+  GRN-D1 | Distribute and combine | Answer: 5x + 12
+  GRN-D2 | Variables on both sides | Answer: x = 6
+  GRN-D3 | Function notation | Answer: 13
+  GRN-D4 | Write slope-intercept equation | Answer: y = 2x - 5
+  GRN-D5 | Substitution | Answer: (4, 7)
+
+Mr. Taylor - Standard Form Vault (Standard, 6 points each)
+  TAY-D1 | Evaluate with two variables | Answer: 9
+  TAY-D2 | Distribute then solve | Answer: x = 7
+  TAY-D3 | Domain and range | Answer: {4, 6}
+  TAY-D4 | Standard to slope-intercept | Answer: y = -2x + 9
+  TAY-D5 | Elimination | Answer: (4, 3)
+
+Ms. Iglaisas - Intercept Alley (Standard, 6 points each)
+  IGL-D1 | Translate into equation | Answer: 2x + 3 = 17
+  IGL-D2 | Sign flip inequality | Answer: x < -5
+  IGL-D3 | Zero of a function | Answer: x = 12
+  IGL-D4 | Intercepts from standard form | Answer: x-intercept 6, y-intercept 4
+  IGL-D5 | Number of solutions | Answer: Infinite solutions
+
+Ms. Pritchert - Point-Slope Pop-A-Shot (Standard, 6 points each)
+  PRI-D1 | Solve with parentheses | Answer: x = 7
+  PRI-D2 | Compound inequality | Answer: -5 < x <= 5
+  PRI-D3 | Arithmetic sequence | Answer: 16, 19
+  PRI-D4 | Point-slope form | Answer: y - 1 = 3(x - 2)
+  PRI-D5 | Method choice | Answer: Elimination, because the y terms cancel
+
+Mr. K - Perpendicular Laser Tag (Standard, 6 points each)
+  MRK-D1 | Absolute value and operations | Answer: 15
+  MRK-D2 | Infinite solutions | Answer: Infinite solutions
+  MRK-D3 | Non-function from table | Answer: x: 1,1,2; y: 3,4,5
+  MRK-D4 | Perpendicular slope | Answer: 1/2
+  MRK-D5 | System of inequalities | Answer: (0, 0)
+
+Mr. Wolfe - Parallel Pinball (Standard, 6 points each)
+  WLF-D1 | Multi-step expression | Answer: 5x - 4
+  WLF-D2 | Variables on both sides | Answer: x = 5
+  WLF-D3 | Function notation with negative | Answer: -1
+  WLF-D4 | Parallel line | Answer: y = 2x + 4
+  WLF-D5 | System by graphing | Answer: (2, 3)
+
+Mr. Harvey Science - Science Lab Circuit (Advanced, 8 points each)
+  HAR-D1 | Equation with distribution | Answer: x = 6
+  HAR-D2 | Literal equation | Answer: y = -3x + 12
+  HAR-D3 | Sequence formula | Answer: 34
+  HAR-D4 | Perpendicular equation | Answer: y = 3x - 17
+  HAR-D5 | System word problem | Answer: 6 student tickets
+
+Ms. Bowen Science - Word Problem Whack-a-Mole (Advanced, 8 points each)
+  BOW-D1 | Expression from words | Answer: 3n - 8
+  BOW-D2 | Absolute value equation | Answer: x = 7 or x = -7
+  BOW-D3 | Zero and intercept | Answer: x = 5
+  BOW-D4 | Linear word problem | Answer: y = 6x + 20
+  BOW-D5 | System with no solution | Answer: y = 2x + 1 and y = 2x - 5
+
+Unknown Area - Mystery Circuit Room (Advanced, 8 points each)
+  UNK-D1 | Challenge simplification | Answer: 11x - 3
+  UNK-D2 | Compound inequality | Answer: -3 <= x < 4
+  UNK-D3 | Function from graph description | Answer: 4
+  UNK-D4 | Point-slope to slope-intercept | Answer: y = 4x - 2
+  UNK-D5 | System of inequalities test | Answer: (2, 3)
+
+Mr. Forrest - Final Boss Cabinet (Boss, 12 points each)
+  FOR-D1 | Boss algebra basics | Answer: x = 7
+  FOR-D2 | Boss inequality | Answer: x <= -4
+  FOR-D3 | Boss functions | Answer: 1
+  FOR-D4 | Boss linear equation | Answer: y = 2x + 3
+  FOR-D5 | Boss systems | Answer: (6, 4)

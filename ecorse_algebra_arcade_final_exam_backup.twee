@@ -1,0 +1,7215 @@
+:: Story Stylesheet [stylesheet]
+tw-sidebar { display: none; }
+tw-passage { max-width: 900px; margin: 0 auto; font-size: 1.1em; line-height: 1.45; }
+tw-link, .enchantment-link { display: inline-block; padding: 0.55em 0.8em; margin: 0.25em 0.15em; border: 1px solid #bbb; border-radius: 10px; background: #f5f5f5; }
+tw-link:hover, .enchantment-link:hover { background: #e9e9e9; }
+body { background: #fbfaf7; }
+
+:: Start
+(set: $score to 0)(set: $roomsCompleted to 0)(set: $puzzlesAttempted to 0)(set: $puzzlesCorrect to 0)(set: $studentName to "")(set: $nameLocked to false)(set: $examEnded to false)(set: $lngd1Done to false)(set: $lngd2Done to false)(set: $lngd3Done to false)(set: $lngd4Done to false)(set: $lngd5Done to false)(set: $bthd1Done to false)(set: $bthd2Done to false)(set: $bthd3Done to false)(set: $bthd4Done to false)(set: $bthd5Done to false)(set: $dosd1Done to false)(set: $dosd2Done to false)(set: $dosd3Done to false)(set: $dosd4Done to false)(set: $dosd5Done to false)(set: $dszd1Done to false)(set: $dszd2Done to false)(set: $dszd3Done to false)(set: $dszd4Done to false)(set: $dszd5Done to false)(set: $trnd1Done to false)(set: $trnd2Done to false)(set: $trnd3Done to false)(set: $trnd4Done to false)(set: $trnd5Done to false)(set: $mord1Done to false)(set: $mord2Done to false)(set: $mord3Done to false)(set: $mord4Done to false)(set: $mord5Done to false)(set: $grnd1Done to false)(set: $grnd2Done to false)(set: $grnd3Done to false)(set: $grnd4Done to false)(set: $grnd5Done to false)(set: $tayd1Done to false)(set: $tayd2Done to false)(set: $tayd3Done to false)(set: $tayd4Done to false)(set: $tayd5Done to false)(set: $igld1Done to false)(set: $igld2Done to false)(set: $igld3Done to false)(set: $igld4Done to false)(set: $igld5Done to false)(set: $prid1Done to false)(set: $prid2Done to false)(set: $prid3Done to false)(set: $prid4Done to false)(set: $prid5Done to false)(set: $mrkd1Done to false)(set: $mrkd2Done to false)(set: $mrkd3Done to false)(set: $mrkd4Done to false)(set: $mrkd5Done to false)(set: $wlfd1Done to false)(set: $wlfd2Done to false)(set: $wlfd3Done to false)(set: $wlfd4Done to false)(set: $wlfd5Done to false)(set: $hard1Done to false)(set: $hard2Done to false)(set: $hard3Done to false)(set: $hard4Done to false)(set: $hard5Done to false)(set: $bowd1Done to false)(set: $bowd2Done to false)(set: $bowd3Done to false)(set: $bowd4Done to false)(set: $bowd5Done to false)(set: $unkd1Done to false)(set: $unkd2Done to false)(set: $unkd3Done to false)(set: $unkd4Done to false)(set: $unkd5Done to false)(set: $ford1Done to false)(set: $ford2Done to false)(set: $ford3Done to false)(set: $ford4Done to false)(set: $ford5Done to false)
+# Ecorse Algebra Arcade: Final Exam
+
+You are about to enter the final exam arcade.
+
+You will choose your name from the roster, then move through the Ecorse map.
+
+Each room has five puzzle topics: Day 1, Day 2, Day 3, Day 4, and Day 5.
+
+Each puzzle is one try only. Correct answers earn points. Wrong answers lock that puzzle, but you may still try other puzzles in the room.
+
+When you leave through the Locked Emergency Doors, the exam ends. You cannot return from the final score page.
+
+(link: "Choose my name")[(goto: "Student Select")]
+
+:: Student Select
+# Student Name Selection
+
+Find your name on the roster. Choose carefully. Your final score page will show this name.
+
+(link: "Alsadai, Moha")[(set: $studentName to "Alsadai, Moha")(goto: "Confirm Name")]
+
+(link: "Crawford, Darline E")[(set: $studentName to "Crawford, Darline E")(goto: "Confirm Name")]
+
+(link: "Denson, Myron")[(set: $studentName to "Denson, Myron")(goto: "Confirm Name")]
+
+(link: "Frazier, Kassidy")[(set: $studentName to "Frazier, Kassidy")(goto: "Confirm Name")]
+
+(link: "Gilchrist, Madyson D")[(set: $studentName to "Gilchrist, Madyson D")(goto: "Confirm Name")]
+
+(link: "Griffen, Den'Zel D")[(set: $studentName to "Griffen, Den'Zel D")(goto: "Confirm Name")]
+
+(link: "Hightower, Aaron")[(set: $studentName to "Hightower, Aaron")(goto: "Confirm Name")]
+
+(link: "Hill III, Robert L")[(set: $studentName to "Hill III, Robert L")(goto: "Confirm Name")]
+
+(link: "Hinton, Christion K")[(set: $studentName to "Hinton, Christion K")(goto: "Confirm Name")]
+
+(link: "Holden, Jordon")[(set: $studentName to "Holden, Jordon")(goto: "Confirm Name")]
+
+(link: "Love, Brayden A")[(set: $studentName to "Love, Brayden A")(goto: "Confirm Name")]
+
+(link: "Miller, Josh I")[(set: $studentName to "Miller, Josh I")(goto: "Confirm Name")]
+
+(link: "Miller, Myriah A")[(set: $studentName to "Miller, Myriah A")(goto: "Confirm Name")]
+
+(link: "Perry, Daylen R")[(set: $studentName to "Perry, Daylen R")(goto: "Confirm Name")]
+
+(link: "Prather, Journey")[(set: $studentName to "Prather, Journey")(goto: "Confirm Name")]
+
+(link: "Qualls, Jordan")[(set: $studentName to "Qualls, Jordan")(goto: "Confirm Name")]
+
+(link: "Rascoe, Eli")[(set: $studentName to "Rascoe, Eli")(goto: "Confirm Name")]
+
+(link: "Smith, Jeremiah A")[(set: $studentName to "Smith, Jeremiah A")(goto: "Confirm Name")]
+
+(link: "Stefanko, Audrey")[(set: $studentName to "Stefanko, Audrey")(goto: "Confirm Name")]
+
+(link: "Suddarth, Servoia")[(set: $studentName to "Suddarth, Servoia")(goto: "Confirm Name")]
+
+(link: "Vernal, Shanell S")[(set: $studentName to "Vernal, Shanell S")(goto: "Confirm Name")]
+
+(link: "Weems, Marcus J")[(set: $studentName to "Weems, Marcus J")(goto: "Confirm Name")]
+
+(link: "Abram, Devion J")[(set: $studentName to "Abram, Devion J")(goto: "Confirm Name")]
+
+(link: "Antoine, Dalexa")[(set: $studentName to "Antoine, Dalexa")(goto: "Confirm Name")]
+
+(link: "Bedell, Kamaya")[(set: $studentName to "Bedell, Kamaya")(goto: "Confirm Name")]
+
+(link: "Davenport, Nevaeh D")[(set: $studentName to "Davenport, Nevaeh D")(goto: "Confirm Name")]
+
+(link: "Hubbard, Ethan")[(set: $studentName to "Hubbard, Ethan")(goto: "Confirm Name")]
+
+(link: "Jett, Comarrie")[(set: $studentName to "Jett, Comarrie")(goto: "Confirm Name")]
+
+(link: "Jones, Azari D")[(set: $studentName to "Jones, Azari D")(goto: "Confirm Name")]
+
+(link: "Jordan, MyLee")[(set: $studentName to "Jordan, MyLee")(goto: "Confirm Name")]
+
+(link: "Maldonado, Kelly")[(set: $studentName to "Maldonado, Kelly")(goto: "Confirm Name")]
+
+(link: "McGuire, Lamere")[(set: $studentName to "McGuire, Lamere")(goto: "Confirm Name")]
+
+(link: "Mitchell, Tyron")[(set: $studentName to "Mitchell, Tyron")(goto: "Confirm Name")]
+
+(link: "Moore, Keirsten M")[(set: $studentName to "Moore, Keirsten M")(goto: "Confirm Name")]
+
+(link: "Nathan, Kmya")[(set: $studentName to "Nathan, Kmya")(goto: "Confirm Name")]
+
+(link: "Oliver, Deidra")[(set: $studentName to "Oliver, Deidra")(goto: "Confirm Name")]
+
+(link: "Parmley, Karion")[(set: $studentName to "Parmley, Karion")(goto: "Confirm Name")]
+
+(link: "Pritchett, Arriel M")[(set: $studentName to "Pritchett, Arriel M")(goto: "Confirm Name")]
+
+(link: "Randall, Kai")[(set: $studentName to "Randall, Kai")(goto: "Confirm Name")]
+
+(link: "Reed, D'ion")[(set: $studentName to "Reed, D'ion")(goto: "Confirm Name")]
+
+(link: "Roebuck, Nevaeh L")[(set: $studentName to "Roebuck, Nevaeh L")(goto: "Confirm Name")]
+
+(link: "Scott, Nathaniel")[(set: $studentName to "Scott, Nathaniel")(goto: "Confirm Name")]
+
+(link: "Shade, Zechariah")[(set: $studentName to "Shade, Zechariah")(goto: "Confirm Name")]
+
+(link: "Shephard, Jameelah")[(set: $studentName to "Shephard, Jameelah")(goto: "Confirm Name")]
+
+(link: "Smith, Dhe'Vin C")[(set: $studentName to "Smith, Dhe'Vin C")(goto: "Confirm Name")]
+
+(link: "Stevens, Isiah")[(set: $studentName to "Stevens, Isiah")(goto: "Confirm Name")]
+
+(link: "Thompson, Coreon L")[(set: $studentName to "Thompson, Coreon L")(goto: "Confirm Name")]
+
+(link: "Vasquez Fabra, Maria")[(set: $studentName to "Vasquez Fabra, Maria")(goto: "Confirm Name")]
+
+(link: "Victoriano Alburquerque, Alfi M")[(set: $studentName to "Victoriano Alburquerque, Alfi M")(goto: "Confirm Name")]
+
+(link: "Walker, Kamyria M")[(set: $studentName to "Walker, Kamyria M")(goto: "Confirm Name")]
+
+(link: "Wright, Charlotte")[(set: $studentName to "Wright, Charlotte")(goto: "Confirm Name")]
+
+(link: "Arismendy Cardenas, Jeremy")[(set: $studentName to "Arismendy Cardenas, Jeremy")(goto: "Confirm Name")]
+
+(link: "Arnold, Monet")[(set: $studentName to "Arnold, Monet")(goto: "Confirm Name")]
+
+(link: "Banks, Jaylen C")[(set: $studentName to "Banks, Jaylen C")(goto: "Confirm Name")]
+
+(link: "Brown III, Benjamin J")[(set: $studentName to "Brown III, Benjamin J")(goto: "Confirm Name")]
+
+(link: "Cabrera, Erik")[(set: $studentName to "Cabrera, Erik")(goto: "Confirm Name")]
+
+(link: "Crocker, Ra'Kari")[(set: $studentName to "Crocker, Ra'Kari")(goto: "Confirm Name")]
+
+(link: "Jett, Cornelius")[(set: $studentName to "Jett, Cornelius")(goto: "Confirm Name")]
+
+(link: "McGhee, Alaysia K")[(set: $studentName to "McGhee, Alaysia K")(goto: "Confirm Name")]
+
+(link: "Morales, Ruben")[(set: $studentName to "Morales, Ruben")(goto: "Confirm Name")]
+
+(link: "Rogers, Mark Eric")[(set: $studentName to "Rogers, Mark Eric")(goto: "Confirm Name")]
+
+(link: "Tillie, Tristian")[(set: $studentName to "Tillie, Tristian")(goto: "Confirm Name")]
+
+(link: "Webster, Michael")[(set: $studentName to "Webster, Michael")(goto: "Confirm Name")]
+
+(link: "Woods, Aubree L")[(set: $studentName to "Woods, Aubree L")(goto: "Confirm Name")]
+
+(link: "Alcaraz, Farrah")[(set: $studentName to "Alcaraz, Farrah")(goto: "Confirm Name")]
+
+(link: "Barcelo Gonzalez, Martin")[(set: $studentName to "Barcelo Gonzalez, Martin")(goto: "Confirm Name")]
+
+(link: "Carter, Bailey K")[(set: $studentName to "Carter, Bailey K")(goto: "Confirm Name")]
+
+(link: "Carter, Robert K")[(set: $studentName to "Carter, Robert K")(goto: "Confirm Name")]
+
+(link: "Chaverra Julio, Camilo")[(set: $studentName to "Chaverra Julio, Camilo")(goto: "Confirm Name")]
+
+(link: "Clerk, Caden I")[(set: $studentName to "Clerk, Caden I")(goto: "Confirm Name")]
+
+(link: "Cook, Jewell M")[(set: $studentName to "Cook, Jewell M")(goto: "Confirm Name")]
+
+(link: "Finley, London A")[(set: $studentName to "Finley, London A")(goto: "Confirm Name")]
+
+(link: "Glover, Nevaeh")[(set: $studentName to "Glover, Nevaeh")(goto: "Confirm Name")]
+
+(link: "Gray, Arielle")[(set: $studentName to "Gray, Arielle")(goto: "Confirm Name")]
+
+(link: "Hourani, Amer")[(set: $studentName to "Hourani, Amer")(goto: "Confirm Name")]
+
+(link: "Humber, Malayah")[(set: $studentName to "Humber, Malayah")(goto: "Confirm Name")]
+
+(link: "Johnson, LaVanna C")[(set: $studentName to "Johnson, LaVanna C")(goto: "Confirm Name")]
+
+(link: "Payne, Tyra A")[(set: $studentName to "Payne, Tyra A")(goto: "Confirm Name")]
+
+(link: "Rudisel, Terry L")[(set: $studentName to "Rudisel, Terry L")(goto: "Confirm Name")]
+
+(link: "Samons, Lana")[(set: $studentName to "Samons, Lana")(goto: "Confirm Name")]
+
+(link: "Waeghe, Amelia V")[(set: $studentName to "Waeghe, Amelia V")(goto: "Confirm Name")]
+
+(link: "Waiters, Da'Vion M")[(set: $studentName to "Waiters, Da'Vion M")(goto: "Confirm Name")]
+
+(link: "Williams, Sauna")[(set: $studentName to "Williams, Sauna")(goto: "Confirm Name")]
+
+(link: "Byrd, A'mya")[(set: $studentName to "Byrd, A'mya")(goto: "Confirm Name")]
+
+(link: "Dozier, Taaliyah")[(set: $studentName to "Dozier, Taaliyah")(goto: "Confirm Name")]
+
+(link: "Harris, Aubrielle S")[(set: $studentName to "Harris, Aubrielle S")(goto: "Confirm Name")]
+
+(link: "Inestroza-Vasquez, Yelile")[(set: $studentName to "Inestroza-Vasquez, Yelile")(goto: "Confirm Name")]
+
+(link: "Mitchell, Travell D")[(set: $studentName to "Mitchell, Travell D")(goto: "Confirm Name")]
+
+(link: "Roberson, Lavender")[(set: $studentName to "Roberson, Lavender")(goto: "Confirm Name")]
+
+(link: "Williams, Jay'Shawn")[(set: $studentName to "Williams, Jay'Shawn")(goto: "Confirm Name")]
+
+(link: "Carter, Kaliyah")[(set: $studentName to "Carter, Kaliyah")(goto: "Confirm Name")]
+
+(link: "Chavez-Uresti, Julia V")[(set: $studentName to "Chavez-Uresti, Julia V")(goto: "Confirm Name")]
+
+(link: "Doss, Aniyah")[(set: $studentName to "Doss, Aniyah")(goto: "Confirm Name")]
+
+(link: "Feliz Noboa, Deivi")[(set: $studentName to "Feliz Noboa, Deivi")(goto: "Confirm Name")]
+
+(link: "Johnson, Reginald A")[(set: $studentName to "Johnson, Reginald A")(goto: "Confirm Name")]
+
+(link: "Reiman, Shiley")[(set: $studentName to "Reiman, Shiley")(goto: "Confirm Name")]
+
+(link: "Tracey, Jahnardo")[(set: $studentName to "Tracey, Jahnardo")(goto: "Confirm Name")]
+
+(link: "Vaughn, Jaiceon L")[(set: $studentName to "Vaughn, Jaiceon L")(goto: "Confirm Name")]
+
+(link: "Wheeler, Nakyla F")[(set: $studentName to "Wheeler, Nakyla F")(goto: "Confirm Name")]
+
+(link: "White, Mathieu")[(set: $studentName to "White, Mathieu")(goto: "Confirm Name")]
+
+:: Confirm Name
+# Confirm Name
+
+You selected:
+
+## $studentName
+
+If this is you, begin the exam. Once you begin, your name cannot be changed inside the game.
+
+(link: "Yes, this is me. Begin exam.")[(set: $nameLocked to true)(goto: "Guard Desk")]
+
+(link: "No, go back to the roster.")[(set: $studentName to "")(goto: "Student Select")]
+
+:: Guard Desk
+# Guard Desk
+
+Student: $studentName
+
+The guard slides a paper answer sheet across the desk.
+
+## Exam Rules
+
+Each room contains five puzzles, one from each review day.
+
+You may try any puzzle you want. Each puzzle is one try only.
+
+Correct answer: earn the room points.
+
+Wrong answer: no points, and that puzzle locks.
+
+Rooms stay open. You may return and try other unlocked puzzles.
+
+Show your work on paper. Write the puzzle code before each problem.
+
+Grade denominator: 360 points.
+
+Minimum grade: 50%.
+
+90% or higher becomes 100%.
+
+When you exit through the Locked Emergency Doors, the exam is over.
+
+(link: "Enter the Main Hall")[(goto: "Main Hall")]
+
+:: Main Hall
+# Main Hall
+
+Student: $studentName
+
+Current score: $score points
+Puzzles attempted: $puzzlesAttempted
+Puzzles correct: $puzzlesCorrect
+
+Choose a room. You may come back to the hall after any puzzle.
+
+## Easy Rooms
+(link: "Teacher Lounge: Photocopier Prize Lounge (4 points per puzzle)")[(goto: "LNG Room")]
+
+(link: "Staff Bathroom: Mirror Maze Sink (4 points per puzzle)")[(goto: "BTH Room")]
+
+(link: "Mr. Doss: Slope Claw Machine (4 points per puzzle)")[(goto: "DOS Room")]
+
+(link: "Ms. Deszi: Y-Intercept Snack Bar (4 points per puzzle)")[(goto: "DSZ Room")]
+
+(link: "Mr. Turner: Horizontal Line Air Hockey (4 points per puzzle)")[(goto: "TRN Room")]
+
+(link: "Mr. Moore: Graph Match Skeeball (4 points per puzzle)")[(goto: "MOR Room")]
+
+## Standard Rooms
+(link: "Mr. Green: Slope-Intercept Speedway (6 points per puzzle)")[(goto: "GRN Room")]
+
+(link: "Mr. Taylor: Standard Form Vault (6 points per puzzle)")[(goto: "TAY Room")]
+
+(link: "Ms. Iglaisas: Intercept Alley (6 points per puzzle)")[(goto: "IGL Room")]
+
+(link: "Ms. Pritchert: Point-Slope Pop-A-Shot (6 points per puzzle)")[(goto: "PRI Room")]
+
+(link: "Mr. K: Perpendicular Laser Tag (6 points per puzzle)")[(goto: "MRK Room")]
+
+(link: "Mr. Wolfe: Parallel Pinball (6 points per puzzle)")[(goto: "WLF Room")]
+
+## Advanced Rooms
+(link: "Mr. Harvey Science: Science Lab Circuit (8 points per puzzle)")[(goto: "HAR Room")]
+
+(link: "Ms. Bowen Science: Word Problem Whack-a-Mole (8 points per puzzle)")[(goto: "BOW Room")]
+
+(link: "Unknown Area: Mystery Circuit Room (8 points per puzzle)")[(goto: "UNK Room")]
+
+## Boss Rooms
+(link: "Mr. Forrest: Final Boss Cabinet (12 points per puzzle)")[(goto: "FOR Room")]
+
+## Exit
+Do not click this until you are finished. The final score page has no return link.
+
+(link: "Locked Emergency Doors: Finish Exam")[(goto: "Exit Gate")]
+
+:: Exit Gate
+# Locked Emergency Doors
+
+Student: $studentName
+
+This is the exam exit. If you continue, your score will be final.
+
+Current score: $score points
+
+Puzzles attempted: $puzzlesAttempted
+
+Puzzles correct: $puzzlesCorrect
+
+(link: "I am finished. Show my final score.")[(set: $examEnded to true)(goto: "Final Score")]
+
+(link: "Not yet. Return to Main Hall.")[(goto: "Main Hall")]
+
+:: Final Score
+# Final Exam Score Page
+
+(set: $rawPercent to (round: (($score / 360) * 100)))
+(if: $rawPercent >= 90)[(set: $finalGrade to 100)](else-if: $rawPercent < 50)[(set: $finalGrade to 50)](else:)[(set: $finalGrade to $rawPercent)]
+
+## Student: $studentName
+
+Raw score: $score points
+
+Grade denominator: 360 points
+
+Raw percent: $rawPercent%
+
+Final grade: $finalGrade%
+
+Puzzles attempted: $puzzlesAttempted
+
+Puzzles correct: $puzzlesCorrect
+
+## Teacher screenshot page
+
+Take a screenshot of this page and turn in your paper work.
+
+The exam is now closed. There is no return link.
+
+
+:: LNG Room
+# Teacher Lounge: Photocopier Prize Lounge
+
+Difficulty: Easy
+Prize: Copper Copy Card
+Value: 4 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Combining like terms
+Code: LNG-D1
+(if: $lngd1Done)[Puzzle locked.](else:)[(link: "Attempt LNG-D1")[(goto: "LNG Day 1")]]
+
+## Day 2: One-step equation
+Code: LNG-D2
+(if: $lngd2Done)[Puzzle locked.](else:)[(link: "Attempt LNG-D2")[(goto: "LNG Day 2")]]
+
+## Day 3: Identify a function
+Code: LNG-D3
+(if: $lngd3Done)[Puzzle locked.](else:)[(link: "Attempt LNG-D3")[(goto: "LNG Day 3")]]
+
+## Day 4: Slope from points
+Code: LNG-D4
+(if: $lngd4Done)[Puzzle locked.](else:)[(link: "Attempt LNG-D4")[(goto: "LNG Day 4")]]
+
+## Day 5: Check a system solution
+Code: LNG-D5
+(if: $lngd5Done)[Puzzle locked.](else:)[(link: "Attempt LNG-D5")[(goto: "LNG Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: LNG Day 1
+(if: $lngd1Done)[
+# LNG-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+# LNG-D1: Combining like terms
+
+Room: Teacher Lounge
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **LNG-D1**
+
+Simplify: 3x + 4 + 2x + 5
+
+(link: "A. 5x + 9")[(goto: "LNG Day 1 Correct")]
+
+(link: "B. 5x + 1")[(goto: "LNG Day 1 Wrong")]
+
+(link: "C. 6x + 9")[(goto: "LNG Day 1 Wrong")]
+
+(link: "D. x + 9")[(goto: "LNG Day 1 Wrong")]
+]
+
+:: LNG Day 1 Correct
+(if: $lngd1Done)[
+# LNG-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd1Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: LNG-D1
+
+You win the Copper Copy Card.
+
++4 points
+
+Correct answer: 5x + 9
+
+Explanation: Combine x terms: 3x + 2x = 5x. Combine numbers: 4 + 5 = 9. The result is 5x + 9.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 1 Wrong
+(if: $lngd1Done)[
+# LNG-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: LNG-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 5x + 9
+
+Explanation: Combine x terms: 3x + 2x = 5x. Combine numbers: 4 + 5 = 9. The result is 5x + 9.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 2
+(if: $lngd2Done)[
+# LNG-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+# LNG-D2: One-step equation
+
+Room: Teacher Lounge
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **LNG-D2**
+
+Solve: x + 7 = 19
+
+(link: "A. x = 12")[(goto: "LNG Day 2 Correct")]
+
+(link: "B. x = 26")[(goto: "LNG Day 2 Wrong")]
+
+(link: "C. x = 7")[(goto: "LNG Day 2 Wrong")]
+
+(link: "D. x = 19")[(goto: "LNG Day 2 Wrong")]
+]
+
+:: LNG Day 2 Correct
+(if: $lngd2Done)[
+# LNG-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd2Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: LNG-D2
+
+You win the Copper Copy Card.
+
++4 points
+
+Correct answer: x = 12
+
+Explanation: Subtract 7 from both sides. x = 12.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 2 Wrong
+(if: $lngd2Done)[
+# LNG-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: LNG-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 12
+
+Explanation: Subtract 7 from both sides. x = 12.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 3
+(if: $lngd3Done)[
+# LNG-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+# LNG-D3: Identify a function
+
+Room: Teacher Lounge
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **LNG-D3**
+
+Is this relation a function? (0,1), (1,2), (2,3), (3,4)
+
+(link: "A. Yes, each input has one output")[(goto: "LNG Day 3 Correct")]
+
+(link: "B. No, an input repeats")[(goto: "LNG Day 3 Wrong")]
+
+(link: "C. No, the outputs repeat")[(goto: "LNG Day 3 Wrong")]
+
+(link: "D. Yes, because all outputs are positive")[(goto: "LNG Day 3 Wrong")]
+]
+
+:: LNG Day 3 Correct
+(if: $lngd3Done)[
+# LNG-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd3Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: LNG-D3
+
+You win the Copper Copy Card.
+
++4 points
+
+Correct answer: Yes, each input has one output
+
+Explanation: A relation is a function if each input has only one output. Here 0, 1, 2, and 3 each appear once.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 3 Wrong
+(if: $lngd3Done)[
+# LNG-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: LNG-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: Yes, each input has one output
+
+Explanation: A relation is a function if each input has only one output. Here 0, 1, 2, and 3 each appear once.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 4
+(if: $lngd4Done)[
+# LNG-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+# LNG-D4: Slope from points
+
+Room: Teacher Lounge
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **LNG-D4**
+
+Find the slope between (0,2) and (3,8)
+
+(link: "A. 2")[(goto: "LNG Day 4 Correct")]
+
+(link: "B. 3")[(goto: "LNG Day 4 Wrong")]
+
+(link: "C. 6")[(goto: "LNG Day 4 Wrong")]
+
+(link: "D. 1/2")[(goto: "LNG Day 4 Wrong")]
+]
+
+:: LNG Day 4 Correct
+(if: $lngd4Done)[
+# LNG-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd4Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: LNG-D4
+
+You win the Copper Copy Card.
+
++4 points
+
+Correct answer: 2
+
+Explanation: Slope is change in y divided by change in x: (8 - 2) / (3 - 0) = 6/3 = 2.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 4 Wrong
+(if: $lngd4Done)[
+# LNG-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: LNG-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 2
+
+Explanation: Slope is change in y divided by change in x: (8 - 2) / (3 - 0) = 6/3 = 2.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 5
+(if: $lngd5Done)[
+# LNG-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+# LNG-D5: Check a system solution
+
+Room: Teacher Lounge
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **LNG-D5**
+
+Does (2,5) solve both equations: y = 2x + 1 and x + y = 7?
+
+(link: "A. Yes")[(goto: "LNG Day 5 Correct")]
+
+(link: "B. No, it only solves the first equation")[(goto: "LNG Day 5 Wrong")]
+
+(link: "C. No, it only solves the second equation")[(goto: "LNG Day 5 Wrong")]
+
+(link: "D. No, it solves neither equation")[(goto: "LNG Day 5 Wrong")]
+]
+
+:: LNG Day 5 Correct
+(if: $lngd5Done)[
+# LNG-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd5Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: LNG-D5
+
+You win the Copper Copy Card.
+
++4 points
+
+Correct answer: Yes
+
+Explanation: For y = 2x + 1, 5 = 2(2) + 1. For x + y = 7, 2 + 5 = 7. It works in both.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: LNG Day 5 Wrong
+(if: $lngd5Done)[
+# LNG-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+](else:)[
+(set: $lngd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: LNG-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: Yes
+
+Explanation: For y = 2x + 1, 5 = 2(2) + 1. For x + y = 7, 2 + 5 = 7. It works in both.
+
+Current score: $score points
+
+(link: "Return to Teacher Lounge")[(goto: "LNG Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Room
+# Staff Bathroom: Mirror Maze Sink
+
+Difficulty: Easy
+Prize: Tiny Mirror Token
+Value: 4 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Evaluating expressions
+Code: BTH-D1
+(if: $bthd1Done)[Puzzle locked.](else:)[(link: "Attempt BTH-D1")[(goto: "BTH Day 1")]]
+
+## Day 2: Solving inequalities
+Code: BTH-D2
+(if: $bthd2Done)[Puzzle locked.](else:)[(link: "Attempt BTH-D2")[(goto: "BTH Day 2")]]
+
+## Day 3: Domain
+Code: BTH-D3
+(if: $bthd3Done)[Puzzle locked.](else:)[(link: "Attempt BTH-D3")[(goto: "BTH Day 3")]]
+
+## Day 4: Y-intercept
+Code: BTH-D4
+(if: $bthd4Done)[Puzzle locked.](else:)[(link: "Attempt BTH-D4")[(goto: "BTH Day 4")]]
+
+## Day 5: Graphing a simple system
+Code: BTH-D5
+(if: $bthd5Done)[Puzzle locked.](else:)[(link: "Attempt BTH-D5")[(goto: "BTH Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: BTH Day 1
+(if: $bthd1Done)[
+# BTH-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+# BTH-D1: Evaluating expressions
+
+Room: Staff Bathroom
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **BTH-D1**
+
+Evaluate 2a + 5 when a = 6
+
+(link: "A. 17")[(goto: "BTH Day 1 Correct")]
+
+(link: "B. 12")[(goto: "BTH Day 1 Wrong")]
+
+(link: "C. 11")[(goto: "BTH Day 1 Wrong")]
+
+(link: "D. 22")[(goto: "BTH Day 1 Wrong")]
+]
+
+:: BTH Day 1 Correct
+(if: $bthd1Done)[
+# BTH-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd1Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BTH-D1
+
+You win the Tiny Mirror Token.
+
++4 points
+
+Correct answer: 17
+
+Explanation: Substitute 6 for a: 2(6) + 5 = 12 + 5 = 17.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 1 Wrong
+(if: $bthd1Done)[
+# BTH-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BTH-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 17
+
+Explanation: Substitute 6 for a: 2(6) + 5 = 12 + 5 = 17.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 2
+(if: $bthd2Done)[
+# BTH-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+# BTH-D2: Solving inequalities
+
+Room: Staff Bathroom
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **BTH-D2**
+
+Solve: x - 4 > 9
+
+(link: "A. x > 13")[(goto: "BTH Day 2 Correct")]
+
+(link: "B. x < 13")[(goto: "BTH Day 2 Wrong")]
+
+(link: "C. x > 5")[(goto: "BTH Day 2 Wrong")]
+
+(link: "D. x < 5")[(goto: "BTH Day 2 Wrong")]
+]
+
+:: BTH Day 2 Correct
+(if: $bthd2Done)[
+# BTH-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd2Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BTH-D2
+
+You win the Tiny Mirror Token.
+
++4 points
+
+Correct answer: x > 13
+
+Explanation: Add 4 to both sides. x > 13.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 2 Wrong
+(if: $bthd2Done)[
+# BTH-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BTH-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x > 13
+
+Explanation: Add 4 to both sides. x > 13.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 3
+(if: $bthd3Done)[
+# BTH-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+# BTH-D3: Domain
+
+Room: Staff Bathroom
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **BTH-D3**
+
+Find the domain of (1,4), (2,5), (3,5)
+
+(link: "A. {1, 2, 3}")[(goto: "BTH Day 3 Correct")]
+
+(link: "B. {4, 5}")[(goto: "BTH Day 3 Wrong")]
+
+(link: "C. {1, 2, 3, 4, 5}")[(goto: "BTH Day 3 Wrong")]
+
+(link: "D. {5}")[(goto: "BTH Day 3 Wrong")]
+]
+
+:: BTH Day 3 Correct
+(if: $bthd3Done)[
+# BTH-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd3Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BTH-D3
+
+You win the Tiny Mirror Token.
+
++4 points
+
+Correct answer: {1, 2, 3}
+
+Explanation: The domain is the set of x-values: 1, 2, and 3.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 3 Wrong
+(if: $bthd3Done)[
+# BTH-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BTH-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: {1, 2, 3}
+
+Explanation: The domain is the set of x-values: 1, 2, and 3.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 4
+(if: $bthd4Done)[
+# BTH-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+# BTH-D4: Y-intercept
+
+Room: Staff Bathroom
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **BTH-D4**
+
+Find the y-intercept of y = -3x + 8
+
+(link: "A. 8")[(goto: "BTH Day 4 Correct")]
+
+(link: "B. -3")[(goto: "BTH Day 4 Wrong")]
+
+(link: "C. 3")[(goto: "BTH Day 4 Wrong")]
+
+(link: "D. -8")[(goto: "BTH Day 4 Wrong")]
+]
+
+:: BTH Day 4 Correct
+(if: $bthd4Done)[
+# BTH-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd4Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BTH-D4
+
+You win the Tiny Mirror Token.
+
++4 points
+
+Correct answer: 8
+
+Explanation: In y = mx + b, b is the y-intercept. Here b = 8.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 4 Wrong
+(if: $bthd4Done)[
+# BTH-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BTH-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 8
+
+Explanation: In y = mx + b, b is the y-intercept. Here b = 8.
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 5
+(if: $bthd5Done)[
+# BTH-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+# BTH-D5: Graphing a simple system
+
+Room: Staff Bathroom
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **BTH-D5**
+
+Solve the system: y = x + 2 and y = 5
+
+(link: "A. (3, 5)")[(goto: "BTH Day 5 Correct")]
+
+(link: "B. (5, 3)")[(goto: "BTH Day 5 Wrong")]
+
+(link: "C. (2, 5)")[(goto: "BTH Day 5 Wrong")]
+
+(link: "D. (5, 7)")[(goto: "BTH Day 5 Wrong")]
+]
+
+:: BTH Day 5 Correct
+(if: $bthd5Done)[
+# BTH-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd5Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BTH-D5
+
+You win the Tiny Mirror Token.
+
++4 points
+
+Correct answer: (3, 5)
+
+Explanation: If y = 5 and y = x + 2, then 5 = x + 2. So x = 3. The solution is (3,5).
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BTH Day 5 Wrong
+(if: $bthd5Done)[
+# BTH-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+](else:)[
+(set: $bthd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BTH-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (3, 5)
+
+Explanation: If y = 5 and y = x + 2, then 5 = x + 2. So x = 3. The solution is (3,5).
+
+Current score: $score points
+
+(link: "Return to Staff Bathroom")[(goto: "BTH Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Room
+# Mr. Doss: Slope Claw Machine
+
+Difficulty: Easy
+Prize: Copper Joystick
+Value: 4 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Simplifying expressions
+Code: DOS-D1
+(if: $dosd1Done)[Puzzle locked.](else:)[(link: "Attempt DOS-D1")[(goto: "DOS Day 1")]]
+
+## Day 2: Two-step equation
+Code: DOS-D2
+(if: $dosd2Done)[Puzzle locked.](else:)[(link: "Attempt DOS-D2")[(goto: "DOS Day 2")]]
+
+## Day 3: Function notation
+Code: DOS-D3
+(if: $dosd3Done)[Puzzle locked.](else:)[(link: "Attempt DOS-D3")[(goto: "DOS Day 3")]]
+
+## Day 4: Slope from points
+Code: DOS-D4
+(if: $dosd4Done)[Puzzle locked.](else:)[(link: "Attempt DOS-D4")[(goto: "DOS Day 4")]]
+
+## Day 5: Number of solutions
+Code: DOS-D5
+(if: $dosd5Done)[Puzzle locked.](else:)[(link: "Attempt DOS-D5")[(goto: "DOS Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: DOS Day 1
+(if: $dosd1Done)[
+# DOS-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+# DOS-D1: Simplifying expressions
+
+Room: Mr. Doss
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DOS-D1**
+
+Simplify: 8m - 3m + 2
+
+(link: "A. 5m + 2")[(goto: "DOS Day 1 Correct")]
+
+(link: "B. 11m + 2")[(goto: "DOS Day 1 Wrong")]
+
+(link: "C. 5m - 2")[(goto: "DOS Day 1 Wrong")]
+
+(link: "D. 7m")[(goto: "DOS Day 1 Wrong")]
+]
+
+:: DOS Day 1 Correct
+(if: $dosd1Done)[
+# DOS-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd1Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DOS-D1
+
+You win the Copper Joystick.
+
++4 points
+
+Correct answer: 5m + 2
+
+Explanation: Combine like terms: 8m - 3m = 5m. The +2 stays.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 1 Wrong
+(if: $dosd1Done)[
+# DOS-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DOS-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 5m + 2
+
+Explanation: Combine like terms: 8m - 3m = 5m. The +2 stays.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 2
+(if: $dosd2Done)[
+# DOS-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+# DOS-D2: Two-step equation
+
+Room: Mr. Doss
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DOS-D2**
+
+Solve: 2x + 3 = 15
+
+(link: "A. x = 6")[(goto: "DOS Day 2 Correct")]
+
+(link: "B. x = 9")[(goto: "DOS Day 2 Wrong")]
+
+(link: "C. x = 5")[(goto: "DOS Day 2 Wrong")]
+
+(link: "D. x = 12")[(goto: "DOS Day 2 Wrong")]
+]
+
+:: DOS Day 2 Correct
+(if: $dosd2Done)[
+# DOS-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd2Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DOS-D2
+
+You win the Copper Joystick.
+
++4 points
+
+Correct answer: x = 6
+
+Explanation: Subtract 3 to get 2x = 12. Divide by 2 to get x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 2 Wrong
+(if: $dosd2Done)[
+# DOS-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DOS-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 6
+
+Explanation: Subtract 3 to get 2x = 12. Divide by 2 to get x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 3
+(if: $dosd3Done)[
+# DOS-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+# DOS-D3: Function notation
+
+Room: Mr. Doss
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DOS-D3**
+
+Let f(x) = x + 4. Find f(6).
+
+(link: "A. 10")[(goto: "DOS Day 3 Correct")]
+
+(link: "B. 6")[(goto: "DOS Day 3 Wrong")]
+
+(link: "C. 4")[(goto: "DOS Day 3 Wrong")]
+
+(link: "D. 24")[(goto: "DOS Day 3 Wrong")]
+]
+
+:: DOS Day 3 Correct
+(if: $dosd3Done)[
+# DOS-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd3Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DOS-D3
+
+You win the Copper Joystick.
+
++4 points
+
+Correct answer: 10
+
+Explanation: Substitute 6 for x: f(6) = 6 + 4 = 10.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 3 Wrong
+(if: $dosd3Done)[
+# DOS-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DOS-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 10
+
+Explanation: Substitute 6 for x: f(6) = 6 + 4 = 10.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 4
+(if: $dosd4Done)[
+# DOS-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+# DOS-D4: Slope from points
+
+Room: Mr. Doss
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DOS-D4**
+
+Find the slope between (1,3) and (5,11)
+
+(link: "A. 2")[(goto: "DOS Day 4 Correct")]
+
+(link: "B. 1/2")[(goto: "DOS Day 4 Wrong")]
+
+(link: "C. 8")[(goto: "DOS Day 4 Wrong")]
+
+(link: "D. 4")[(goto: "DOS Day 4 Wrong")]
+]
+
+:: DOS Day 4 Correct
+(if: $dosd4Done)[
+# DOS-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd4Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DOS-D4
+
+You win the Copper Joystick.
+
++4 points
+
+Correct answer: 2
+
+Explanation: Slope = (11 - 3)/(5 - 1) = 8/4 = 2.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 4 Wrong
+(if: $dosd4Done)[
+# DOS-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DOS-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 2
+
+Explanation: Slope = (11 - 3)/(5 - 1) = 8/4 = 2.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 5
+(if: $dosd5Done)[
+# DOS-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+# DOS-D5: Number of solutions
+
+Room: Mr. Doss
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DOS-D5**
+
+How many solutions do these lines have: y = 3x + 1 and y = 3x - 4?
+
+(link: "A. No solution")[(goto: "DOS Day 5 Correct")]
+
+(link: "B. One solution")[(goto: "DOS Day 5 Wrong")]
+
+(link: "C. Infinite solutions")[(goto: "DOS Day 5 Wrong")]
+
+(link: "D. Two solutions")[(goto: "DOS Day 5 Wrong")]
+]
+
+:: DOS Day 5 Correct
+(if: $dosd5Done)[
+# DOS-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd5Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DOS-D5
+
+You win the Copper Joystick.
+
++4 points
+
+Correct answer: No solution
+
+Explanation: The slopes match but the y-intercepts are different. The lines are parallel, so they never meet.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DOS Day 5 Wrong
+(if: $dosd5Done)[
+# DOS-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+](else:)[
+(set: $dosd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DOS-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: No solution
+
+Explanation: The slopes match but the y-intercepts are different. The lines are parallel, so they never meet.
+
+Current score: $score points
+
+(link: "Return to Mr. Doss")[(goto: "DOS Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Room
+# Ms. Deszi: Y-Intercept Snack Bar
+
+Difficulty: Easy
+Prize: Nachos of Notation
+Value: 4 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Order of operations
+Code: DSZ-D1
+(if: $dszd1Done)[Puzzle locked.](else:)[(link: "Attempt DSZ-D1")[(goto: "DSZ Day 1")]]
+
+## Day 2: Inequality with division
+Code: DSZ-D2
+(if: $dszd2Done)[Puzzle locked.](else:)[(link: "Attempt DSZ-D2")[(goto: "DSZ Day 2")]]
+
+## Day 3: Range
+Code: DSZ-D3
+(if: $dszd3Done)[Puzzle locked.](else:)[(link: "Attempt DSZ-D3")[(goto: "DSZ Day 3")]]
+
+## Day 4: Slope-intercept form
+Code: DSZ-D4
+(if: $dszd4Done)[Puzzle locked.](else:)[(link: "Attempt DSZ-D4")[(goto: "DSZ Day 4")]]
+
+## Day 5: Substitution idea
+Code: DSZ-D5
+(if: $dszd5Done)[Puzzle locked.](else:)[(link: "Attempt DSZ-D5")[(goto: "DSZ Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: DSZ Day 1
+(if: $dszd1Done)[
+# DSZ-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+# DSZ-D1: Order of operations
+
+Room: Ms. Deszi
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DSZ-D1**
+
+Simplify: 6 + 2(5)
+
+(link: "A. 16")[(goto: "DSZ Day 1 Correct")]
+
+(link: "B. 40")[(goto: "DSZ Day 1 Wrong")]
+
+(link: "C. 30")[(goto: "DSZ Day 1 Wrong")]
+
+(link: "D. 13")[(goto: "DSZ Day 1 Wrong")]
+]
+
+:: DSZ Day 1 Correct
+(if: $dszd1Done)[
+# DSZ-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd1Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DSZ-D1
+
+You win the Nachos of Notation.
+
++4 points
+
+Correct answer: 16
+
+Explanation: Multiply first: 2(5) = 10. Then add 6 to get 16.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 1 Wrong
+(if: $dszd1Done)[
+# DSZ-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DSZ-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 16
+
+Explanation: Multiply first: 2(5) = 10. Then add 6 to get 16.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 2
+(if: $dszd2Done)[
+# DSZ-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+# DSZ-D2: Inequality with division
+
+Room: Ms. Deszi
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DSZ-D2**
+
+Solve: 3x <= 18
+
+(link: "A. x <= 6")[(goto: "DSZ Day 2 Correct")]
+
+(link: "B. x >= 6")[(goto: "DSZ Day 2 Wrong")]
+
+(link: "C. x < 6")[(goto: "DSZ Day 2 Wrong")]
+
+(link: "D. x = 6")[(goto: "DSZ Day 2 Wrong")]
+]
+
+:: DSZ Day 2 Correct
+(if: $dszd2Done)[
+# DSZ-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd2Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DSZ-D2
+
+You win the Nachos of Notation.
+
++4 points
+
+Correct answer: x <= 6
+
+Explanation: Divide both sides by positive 3. The sign stays the same: x <= 6.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 2 Wrong
+(if: $dszd2Done)[
+# DSZ-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DSZ-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x <= 6
+
+Explanation: Divide both sides by positive 3. The sign stays the same: x <= 6.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 3
+(if: $dszd3Done)[
+# DSZ-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+# DSZ-D3: Range
+
+Room: Ms. Deszi
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DSZ-D3**
+
+Find the range of (1,7), (2,9), (3,7)
+
+(link: "A. {7, 9}")[(goto: "DSZ Day 3 Correct")]
+
+(link: "B. {1, 2, 3}")[(goto: "DSZ Day 3 Wrong")]
+
+(link: "C. {1, 2, 3, 7, 9}")[(goto: "DSZ Day 3 Wrong")]
+
+(link: "D. {7}")[(goto: "DSZ Day 3 Wrong")]
+]
+
+:: DSZ Day 3 Correct
+(if: $dszd3Done)[
+# DSZ-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd3Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DSZ-D3
+
+You win the Nachos of Notation.
+
++4 points
+
+Correct answer: {7, 9}
+
+Explanation: The range is the set of y-values. The y-values are 7, 9, and 7, so the range is {7, 9}.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 3 Wrong
+(if: $dszd3Done)[
+# DSZ-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DSZ-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: {7, 9}
+
+Explanation: The range is the set of y-values. The y-values are 7, 9, and 7, so the range is {7, 9}.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 4
+(if: $dszd4Done)[
+# DSZ-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+# DSZ-D4: Slope-intercept form
+
+Room: Ms. Deszi
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DSZ-D4**
+
+In y = 4x - 1, what is the slope?
+
+(link: "A. 4")[(goto: "DSZ Day 4 Correct")]
+
+(link: "B. -1")[(goto: "DSZ Day 4 Wrong")]
+
+(link: "C. 1")[(goto: "DSZ Day 4 Wrong")]
+
+(link: "D. -4")[(goto: "DSZ Day 4 Wrong")]
+]
+
+:: DSZ Day 4 Correct
+(if: $dszd4Done)[
+# DSZ-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd4Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DSZ-D4
+
+You win the Nachos of Notation.
+
++4 points
+
+Correct answer: 4
+
+Explanation: In y = mx + b, m is the slope. Here m = 4.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 4 Wrong
+(if: $dszd4Done)[
+# DSZ-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DSZ-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 4
+
+Explanation: In y = mx + b, m is the slope. Here m = 4.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 5
+(if: $dszd5Done)[
+# DSZ-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+# DSZ-D5: Substitution idea
+
+Room: Ms. Deszi
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **DSZ-D5**
+
+If y = 2x and x = 4, what is y?
+
+(link: "A. 8")[(goto: "DSZ Day 5 Correct")]
+
+(link: "B. 6")[(goto: "DSZ Day 5 Wrong")]
+
+(link: "C. 2")[(goto: "DSZ Day 5 Wrong")]
+
+(link: "D. 4")[(goto: "DSZ Day 5 Wrong")]
+]
+
+:: DSZ Day 5 Correct
+(if: $dszd5Done)[
+# DSZ-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd5Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: DSZ-D5
+
+You win the Nachos of Notation.
+
++4 points
+
+Correct answer: 8
+
+Explanation: Substitute x = 4 into y = 2x: y = 2(4) = 8.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: DSZ Day 5 Wrong
+(if: $dszd5Done)[
+# DSZ-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+](else:)[
+(set: $dszd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: DSZ-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 8
+
+Explanation: Substitute x = 4 into y = 2x: y = 2(4) = 8.
+
+Current score: $score points
+
+(link: "Return to Ms. Deszi")[(goto: "DSZ Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Room
+# Mr. Turner: Horizontal Line Air Hockey
+
+Difficulty: Easy
+Prize: Flat Puck
+Value: 4 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Absolute value
+Code: TRN-D1
+(if: $trnd1Done)[Puzzle locked.](else:)[(link: "Attempt TRN-D1")[(goto: "TRN Day 1")]]
+
+## Day 2: Variables on both sides, easy
+Code: TRN-D2
+(if: $trnd2Done)[Puzzle locked.](else:)[(link: "Attempt TRN-D2")[(goto: "TRN Day 2")]]
+
+## Day 3: Function or not
+Code: TRN-D3
+(if: $trnd3Done)[Puzzle locked.](else:)[(link: "Attempt TRN-D3")[(goto: "TRN Day 3")]]
+
+## Day 4: Horizontal line
+Code: TRN-D4
+(if: $trnd4Done)[Puzzle locked.](else:)[(link: "Attempt TRN-D4")[(goto: "TRN Day 4")]]
+
+## Day 5: System solution meaning
+Code: TRN-D5
+(if: $trnd5Done)[Puzzle locked.](else:)[(link: "Attempt TRN-D5")[(goto: "TRN Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: TRN Day 1
+(if: $trnd1Done)[
+# TRN-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+# TRN-D1: Absolute value
+
+Room: Mr. Turner
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **TRN-D1**
+
+Simplify: | -9 |
+
+(link: "A. 9")[(goto: "TRN Day 1 Correct")]
+
+(link: "B. -9")[(goto: "TRN Day 1 Wrong")]
+
+(link: "C. 0")[(goto: "TRN Day 1 Wrong")]
+
+(link: "D. 18")[(goto: "TRN Day 1 Wrong")]
+]
+
+:: TRN Day 1 Correct
+(if: $trnd1Done)[
+# TRN-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd1Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TRN-D1
+
+You win the Flat Puck.
+
++4 points
+
+Correct answer: 9
+
+Explanation: Absolute value is distance from zero, so |-9| = 9.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 1 Wrong
+(if: $trnd1Done)[
+# TRN-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TRN-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 9
+
+Explanation: Absolute value is distance from zero, so |-9| = 9.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 2
+(if: $trnd2Done)[
+# TRN-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+# TRN-D2: Variables on both sides, easy
+
+Room: Mr. Turner
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **TRN-D2**
+
+Solve: 4x = 2x + 10
+
+(link: "A. x = 5")[(goto: "TRN Day 2 Correct")]
+
+(link: "B. x = 10")[(goto: "TRN Day 2 Wrong")]
+
+(link: "C. x = 2")[(goto: "TRN Day 2 Wrong")]
+
+(link: "D. no solution")[(goto: "TRN Day 2 Wrong")]
+]
+
+:: TRN Day 2 Correct
+(if: $trnd2Done)[
+# TRN-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd2Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TRN-D2
+
+You win the Flat Puck.
+
++4 points
+
+Correct answer: x = 5
+
+Explanation: Subtract 2x from both sides: 2x = 10. Divide by 2: x = 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 2 Wrong
+(if: $trnd2Done)[
+# TRN-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TRN-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 5
+
+Explanation: Subtract 2x from both sides: 2x = 10. Divide by 2: x = 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 3
+(if: $trnd3Done)[
+# TRN-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+# TRN-D3: Function or not
+
+Room: Mr. Turner
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **TRN-D3**
+
+Is this a function? (2,5), (2,7), (3,8)
+
+(link: "A. No, x = 2 has two outputs")[(goto: "TRN Day 3 Correct")]
+
+(link: "B. Yes, every y is positive")[(goto: "TRN Day 3 Wrong")]
+
+(link: "C. Yes, there are three points")[(goto: "TRN Day 3 Wrong")]
+
+(link: "D. No, y = 8 appears once")[(goto: "TRN Day 3 Wrong")]
+]
+
+:: TRN Day 3 Correct
+(if: $trnd3Done)[
+# TRN-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd3Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TRN-D3
+
+You win the Flat Puck.
+
++4 points
+
+Correct answer: No, x = 2 has two outputs
+
+Explanation: A function cannot have the same input paired with two different outputs. x = 2 gives 5 and 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 3 Wrong
+(if: $trnd3Done)[
+# TRN-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TRN-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: No, x = 2 has two outputs
+
+Explanation: A function cannot have the same input paired with two different outputs. x = 2 gives 5 and 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 4
+(if: $trnd4Done)[
+# TRN-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+# TRN-D4: Horizontal line
+
+Room: Mr. Turner
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **TRN-D4**
+
+Which equation is a horizontal line?
+
+(link: "A. y = -4")[(goto: "TRN Day 4 Correct")]
+
+(link: "B. x = -4")[(goto: "TRN Day 4 Wrong")]
+
+(link: "C. y = x - 4")[(goto: "TRN Day 4 Wrong")]
+
+(link: "D. x + y = 4")[(goto: "TRN Day 4 Wrong")]
+]
+
+:: TRN Day 4 Correct
+(if: $trnd4Done)[
+# TRN-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd4Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TRN-D4
+
+You win the Flat Puck.
+
++4 points
+
+Correct answer: y = -4
+
+Explanation: Horizontal lines have equations like y = number.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 4 Wrong
+(if: $trnd4Done)[
+# TRN-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TRN-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = -4
+
+Explanation: Horizontal lines have equations like y = number.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 5
+(if: $trnd5Done)[
+# TRN-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+# TRN-D5: System solution meaning
+
+Room: Mr. Turner
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **TRN-D5**
+
+What does the solution to a system represent?
+
+(link: "A. The point that works in both equations")[(goto: "TRN Day 5 Correct")]
+
+(link: "B. Only the x-intercept")[(goto: "TRN Day 5 Wrong")]
+
+(link: "C. Only the y-intercept")[(goto: "TRN Day 5 Wrong")]
+
+(link: "D. The steepness of one line")[(goto: "TRN Day 5 Wrong")]
+]
+
+:: TRN Day 5 Correct
+(if: $trnd5Done)[
+# TRN-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd5Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TRN-D5
+
+You win the Flat Puck.
+
++4 points
+
+Correct answer: The point that works in both equations
+
+Explanation: A system solution must satisfy every equation in the system.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TRN Day 5 Wrong
+(if: $trnd5Done)[
+# TRN-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+](else:)[
+(set: $trnd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TRN-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: The point that works in both equations
+
+Explanation: A system solution must satisfy every equation in the system.
+
+Current score: $score points
+
+(link: "Return to Mr. Turner")[(goto: "TRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Room
+# Mr. Moore: Graph Match Skeeball
+
+Difficulty: Easy
+Prize: Skeeball Ticket Strip
+Value: 4 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Translate words
+Code: MOR-D1
+(if: $mord1Done)[Puzzle locked.](else:)[(link: "Attempt MOR-D1")[(goto: "MOR Day 1")]]
+
+## Day 2: No solution idea
+Code: MOR-D2
+(if: $mord2Done)[Puzzle locked.](else:)[(link: "Attempt MOR-D2")[(goto: "MOR Day 2")]]
+
+## Day 3: Arithmetic sequence
+Code: MOR-D3
+(if: $mord3Done)[Puzzle locked.](else:)[(link: "Attempt MOR-D3")[(goto: "MOR Day 3")]]
+
+## Day 4: Vertical line
+Code: MOR-D4
+(if: $mord4Done)[Puzzle locked.](else:)[(link: "Attempt MOR-D4")[(goto: "MOR Day 4")]]
+
+## Day 5: Simple elimination
+Code: MOR-D5
+(if: $mord5Done)[Puzzle locked.](else:)[(link: "Attempt MOR-D5")[(goto: "MOR Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: MOR Day 1
+(if: $mord1Done)[
+# MOR-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+# MOR-D1: Translate words
+
+Room: Mr. Moore
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **MOR-D1**
+
+Translate: five more than twice a number
+
+(link: "A. 2x + 5")[(goto: "MOR Day 1 Correct")]
+
+(link: "B. 5x + 2")[(goto: "MOR Day 1 Wrong")]
+
+(link: "C. 2(x + 5)")[(goto: "MOR Day 1 Wrong")]
+
+(link: "D. x + 10")[(goto: "MOR Day 1 Wrong")]
+]
+
+:: MOR Day 1 Correct
+(if: $mord1Done)[
+# MOR-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord1Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MOR-D1
+
+You win the Skeeball Ticket Strip.
+
++4 points
+
+Correct answer: 2x + 5
+
+Explanation: Twice a number is 2x. Five more than that is 2x + 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 1 Wrong
+(if: $mord1Done)[
+# MOR-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MOR-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 2x + 5
+
+Explanation: Twice a number is 2x. Five more than that is 2x + 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 2
+(if: $mord2Done)[
+# MOR-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+# MOR-D2: No solution idea
+
+Room: Mr. Moore
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **MOR-D2**
+
+Solve or classify: x + 4 = x + 9
+
+(link: "A. No solution")[(goto: "MOR Day 2 Correct")]
+
+(link: "B. x = 5")[(goto: "MOR Day 2 Wrong")]
+
+(link: "C. Infinite solutions")[(goto: "MOR Day 2 Wrong")]
+
+(link: "D. x = 13")[(goto: "MOR Day 2 Wrong")]
+]
+
+:: MOR Day 2 Correct
+(if: $mord2Done)[
+# MOR-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord2Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MOR-D2
+
+You win the Skeeball Ticket Strip.
+
++4 points
+
+Correct answer: No solution
+
+Explanation: Subtract x from both sides and get 4 = 9, which is false. There is no solution.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 2 Wrong
+(if: $mord2Done)[
+# MOR-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MOR-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: No solution
+
+Explanation: Subtract x from both sides and get 4 = 9, which is false. There is no solution.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 3
+(if: $mord3Done)[
+# MOR-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+# MOR-D3: Arithmetic sequence
+
+Room: Mr. Moore
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **MOR-D3**
+
+What is the next term in 5, 8, 11, 14, ...?
+
+(link: "A. 17")[(goto: "MOR Day 3 Correct")]
+
+(link: "B. 16")[(goto: "MOR Day 3 Wrong")]
+
+(link: "C. 18")[(goto: "MOR Day 3 Wrong")]
+
+(link: "D. 19")[(goto: "MOR Day 3 Wrong")]
+]
+
+:: MOR Day 3 Correct
+(if: $mord3Done)[
+# MOR-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord3Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MOR-D3
+
+You win the Skeeball Ticket Strip.
+
++4 points
+
+Correct answer: 17
+
+Explanation: The sequence adds 3 each time. 14 + 3 = 17.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 3 Wrong
+(if: $mord3Done)[
+# MOR-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MOR-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 17
+
+Explanation: The sequence adds 3 each time. 14 + 3 = 17.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 4
+(if: $mord4Done)[
+# MOR-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+# MOR-D4: Vertical line
+
+Room: Mr. Moore
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **MOR-D4**
+
+Which equation is a vertical line?
+
+(link: "A. x = 6")[(goto: "MOR Day 4 Correct")]
+
+(link: "B. y = 6")[(goto: "MOR Day 4 Wrong")]
+
+(link: "C. y = 6x")[(goto: "MOR Day 4 Wrong")]
+
+(link: "D. x + y = 6")[(goto: "MOR Day 4 Wrong")]
+]
+
+:: MOR Day 4 Correct
+(if: $mord4Done)[
+# MOR-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord4Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MOR-D4
+
+You win the Skeeball Ticket Strip.
+
++4 points
+
+Correct answer: x = 6
+
+Explanation: Vertical lines have equations like x = number.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 4 Wrong
+(if: $mord4Done)[
+# MOR-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MOR-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 6
+
+Explanation: Vertical lines have equations like x = number.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 5
+(if: $mord5Done)[
+# MOR-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+# MOR-D5: Simple elimination
+
+Room: Mr. Moore
+
+Difficulty: Easy
+
+Value: 4 points
+
+Write this code on your paper before solving: **MOR-D5**
+
+Solve: x + y = 7 and x - y = 1
+
+(link: "A. (4, 3)")[(goto: "MOR Day 5 Correct")]
+
+(link: "B. (3, 4)")[(goto: "MOR Day 5 Wrong")]
+
+(link: "C. (7, 1)")[(goto: "MOR Day 5 Wrong")]
+
+(link: "D. (1, 7)")[(goto: "MOR Day 5 Wrong")]
+]
+
+:: MOR Day 5 Correct
+(if: $mord5Done)[
+# MOR-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord5Done to true)(set: $score to $score + 4)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MOR-D5
+
+You win the Skeeball Ticket Strip.
+
++4 points
+
+Correct answer: (4, 3)
+
+Explanation: Add the equations to eliminate y: 2x = 8, so x = 4. Then 4 + y = 7, so y = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MOR Day 5 Wrong
+(if: $mord5Done)[
+# MOR-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+](else:)[
+(set: $mord5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MOR-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (4, 3)
+
+Explanation: Add the equations to eliminate y: 2x = 8, so x = 4. Then 4 + y = 7, so y = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Moore")[(goto: "MOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Room
+# Mr. Green: Slope-Intercept Speedway
+
+Difficulty: Standard
+Prize: Silver Racing Wheel
+Value: 6 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Distribute and combine
+Code: GRN-D1
+(if: $grnd1Done)[Puzzle locked.](else:)[(link: "Attempt GRN-D1")[(goto: "GRN Day 1")]]
+
+## Day 2: Variables on both sides
+Code: GRN-D2
+(if: $grnd2Done)[Puzzle locked.](else:)[(link: "Attempt GRN-D2")[(goto: "GRN Day 2")]]
+
+## Day 3: Function notation
+Code: GRN-D3
+(if: $grnd3Done)[Puzzle locked.](else:)[(link: "Attempt GRN-D3")[(goto: "GRN Day 3")]]
+
+## Day 4: Write slope-intercept equation
+Code: GRN-D4
+(if: $grnd4Done)[Puzzle locked.](else:)[(link: "Attempt GRN-D4")[(goto: "GRN Day 4")]]
+
+## Day 5: Substitution
+Code: GRN-D5
+(if: $grnd5Done)[Puzzle locked.](else:)[(link: "Attempt GRN-D5")[(goto: "GRN Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: GRN Day 1
+(if: $grnd1Done)[
+# GRN-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+# GRN-D1: Distribute and combine
+
+Room: Mr. Green
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **GRN-D1**
+
+Simplify: 3(x + 4) + 2x
+
+(link: "A. 5x + 12")[(goto: "GRN Day 1 Correct")]
+
+(link: "B. 3x + 12")[(goto: "GRN Day 1 Wrong")]
+
+(link: "C. 5x + 4")[(goto: "GRN Day 1 Wrong")]
+
+(link: "D. 6x + 12")[(goto: "GRN Day 1 Wrong")]
+]
+
+:: GRN Day 1 Correct
+(if: $grnd1Done)[
+# GRN-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd1Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: GRN-D1
+
+You win the Silver Racing Wheel.
+
++6 points
+
+Correct answer: 5x + 12
+
+Explanation: Distribute first: 3x + 12. Then combine with 2x to get 5x + 12.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 1 Wrong
+(if: $grnd1Done)[
+# GRN-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: GRN-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 5x + 12
+
+Explanation: Distribute first: 3x + 12. Then combine with 2x to get 5x + 12.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 2
+(if: $grnd2Done)[
+# GRN-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+# GRN-D2: Variables on both sides
+
+Room: Mr. Green
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **GRN-D2**
+
+Solve: 5x - 2 = 3x + 10
+
+(link: "A. x = 6")[(goto: "GRN Day 2 Correct")]
+
+(link: "B. x = 4")[(goto: "GRN Day 2 Wrong")]
+
+(link: "C. x = -6")[(goto: "GRN Day 2 Wrong")]
+
+(link: "D. no solution")[(goto: "GRN Day 2 Wrong")]
+]
+
+:: GRN Day 2 Correct
+(if: $grnd2Done)[
+# GRN-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd2Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: GRN-D2
+
+You win the Silver Racing Wheel.
+
++6 points
+
+Correct answer: x = 6
+
+Explanation: Subtract 3x: 2x - 2 = 10. Add 2: 2x = 12. Divide by 2: x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 2 Wrong
+(if: $grnd2Done)[
+# GRN-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: GRN-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 6
+
+Explanation: Subtract 3x: 2x - 2 = 10. Add 2: 2x = 12. Divide by 2: x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 3
+(if: $grnd3Done)[
+# GRN-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+# GRN-D3: Function notation
+
+Room: Mr. Green
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **GRN-D3**
+
+Let f(x) = 3x - 2. Find f(5).
+
+(link: "A. 13")[(goto: "GRN Day 3 Correct")]
+
+(link: "B. 15")[(goto: "GRN Day 3 Wrong")]
+
+(link: "C. 17")[(goto: "GRN Day 3 Wrong")]
+
+(link: "D. 10")[(goto: "GRN Day 3 Wrong")]
+]
+
+:: GRN Day 3 Correct
+(if: $grnd3Done)[
+# GRN-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd3Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: GRN-D3
+
+You win the Silver Racing Wheel.
+
++6 points
+
+Correct answer: 13
+
+Explanation: Substitute 5: f(5) = 3(5) - 2 = 15 - 2 = 13.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 3 Wrong
+(if: $grnd3Done)[
+# GRN-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: GRN-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 13
+
+Explanation: Substitute 5: f(5) = 3(5) - 2 = 15 - 2 = 13.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 4
+(if: $grnd4Done)[
+# GRN-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+# GRN-D4: Write slope-intercept equation
+
+Room: Mr. Green
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **GRN-D4**
+
+Write the equation with slope 2 and y-intercept -5.
+
+(link: "A. y = 2x - 5")[(goto: "GRN Day 4 Correct")]
+
+(link: "B. y = -5x + 2")[(goto: "GRN Day 4 Wrong")]
+
+(link: "C. y = 2x + 5")[(goto: "GRN Day 4 Wrong")]
+
+(link: "D. y = -2x - 5")[(goto: "GRN Day 4 Wrong")]
+]
+
+:: GRN Day 4 Correct
+(if: $grnd4Done)[
+# GRN-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd4Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: GRN-D4
+
+You win the Silver Racing Wheel.
+
++6 points
+
+Correct answer: y = 2x - 5
+
+Explanation: Slope-intercept form is y = mx + b. m = 2 and b = -5, so y = 2x - 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 4 Wrong
+(if: $grnd4Done)[
+# GRN-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: GRN-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 2x - 5
+
+Explanation: Slope-intercept form is y = mx + b. m = 2 and b = -5, so y = 2x - 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 5
+(if: $grnd5Done)[
+# GRN-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+# GRN-D5: Substitution
+
+Room: Mr. Green
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **GRN-D5**
+
+Solve: y = x + 3 and x + y = 11
+
+(link: "A. (4, 7)")[(goto: "GRN Day 5 Correct")]
+
+(link: "B. (7, 4)")[(goto: "GRN Day 5 Wrong")]
+
+(link: "C. (3, 8)")[(goto: "GRN Day 5 Wrong")]
+
+(link: "D. (5, 6)")[(goto: "GRN Day 5 Wrong")]
+]
+
+:: GRN Day 5 Correct
+(if: $grnd5Done)[
+# GRN-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd5Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: GRN-D5
+
+You win the Silver Racing Wheel.
+
++6 points
+
+Correct answer: (4, 7)
+
+Explanation: Substitute y = x + 3 into x + y = 11: x + x + 3 = 11. Then 2x = 8, so x = 4 and y = 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: GRN Day 5 Wrong
+(if: $grnd5Done)[
+# GRN-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+](else:)[
+(set: $grnd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: GRN-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (4, 7)
+
+Explanation: Substitute y = x + 3 into x + y = 11: x + x + 3 = 11. Then 2x = 8, so x = 4 and y = 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Green")[(goto: "GRN Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Room
+# Mr. Taylor: Standard Form Vault
+
+Difficulty: Standard
+Prize: Vault Key
+Value: 6 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Evaluate with two variables
+Code: TAY-D1
+(if: $tayd1Done)[Puzzle locked.](else:)[(link: "Attempt TAY-D1")[(goto: "TAY Day 1")]]
+
+## Day 2: Distribute then solve
+Code: TAY-D2
+(if: $tayd2Done)[Puzzle locked.](else:)[(link: "Attempt TAY-D2")[(goto: "TAY Day 2")]]
+
+## Day 3: Domain and range
+Code: TAY-D3
+(if: $tayd3Done)[Puzzle locked.](else:)[(link: "Attempt TAY-D3")[(goto: "TAY Day 3")]]
+
+## Day 4: Standard to slope-intercept
+Code: TAY-D4
+(if: $tayd4Done)[Puzzle locked.](else:)[(link: "Attempt TAY-D4")[(goto: "TAY Day 4")]]
+
+## Day 5: Elimination
+Code: TAY-D5
+(if: $tayd5Done)[Puzzle locked.](else:)[(link: "Attempt TAY-D5")[(goto: "TAY Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: TAY Day 1
+(if: $tayd1Done)[
+# TAY-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+# TAY-D1: Evaluate with two variables
+
+Room: Mr. Taylor
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **TAY-D1**
+
+Evaluate 2a - b when a = 7 and b = 5
+
+(link: "A. 9")[(goto: "TAY Day 1 Correct")]
+
+(link: "B. 19")[(goto: "TAY Day 1 Wrong")]
+
+(link: "C. -9")[(goto: "TAY Day 1 Wrong")]
+
+(link: "D. 12")[(goto: "TAY Day 1 Wrong")]
+]
+
+:: TAY Day 1 Correct
+(if: $tayd1Done)[
+# TAY-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd1Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TAY-D1
+
+You win the Vault Key.
+
++6 points
+
+Correct answer: 9
+
+Explanation: Substitute: 2(7) - 5 = 14 - 5 = 9.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 1 Wrong
+(if: $tayd1Done)[
+# TAY-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TAY-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 9
+
+Explanation: Substitute: 2(7) - 5 = 14 - 5 = 9.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 2
+(if: $tayd2Done)[
+# TAY-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+# TAY-D2: Distribute then solve
+
+Room: Mr. Taylor
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **TAY-D2**
+
+Solve: 4(x - 2) = 20
+
+(link: "A. x = 7")[(goto: "TAY Day 2 Correct")]
+
+(link: "B. x = 5")[(goto: "TAY Day 2 Wrong")]
+
+(link: "C. x = 3")[(goto: "TAY Day 2 Wrong")]
+
+(link: "D. x = 12")[(goto: "TAY Day 2 Wrong")]
+]
+
+:: TAY Day 2 Correct
+(if: $tayd2Done)[
+# TAY-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd2Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TAY-D2
+
+You win the Vault Key.
+
++6 points
+
+Correct answer: x = 7
+
+Explanation: Distribute or divide first. 4x - 8 = 20, so 4x = 28 and x = 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 2 Wrong
+(if: $tayd2Done)[
+# TAY-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TAY-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 7
+
+Explanation: Distribute or divide first. 4x - 8 = 20, so 4x = 28 and x = 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 3
+(if: $tayd3Done)[
+# TAY-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+# TAY-D3: Domain and range
+
+Room: Mr. Taylor
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **TAY-D3**
+
+For (-2,6), (0,4), (3,4), what is the range?
+
+(link: "A. {4, 6}")[(goto: "TAY Day 3 Correct")]
+
+(link: "B. {-2, 0, 3}")[(goto: "TAY Day 3 Wrong")]
+
+(link: "C. {-2, 0, 3, 4, 6}")[(goto: "TAY Day 3 Wrong")]
+
+(link: "D. {6}")[(goto: "TAY Day 3 Wrong")]
+]
+
+:: TAY Day 3 Correct
+(if: $tayd3Done)[
+# TAY-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd3Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TAY-D3
+
+You win the Vault Key.
+
++6 points
+
+Correct answer: {4, 6}
+
+Explanation: The range is the y-values. The y-values are 6, 4, and 4, so the range is {4, 6}.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 3 Wrong
+(if: $tayd3Done)[
+# TAY-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TAY-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: {4, 6}
+
+Explanation: The range is the y-values. The y-values are 6, 4, and 4, so the range is {4, 6}.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 4
+(if: $tayd4Done)[
+# TAY-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+# TAY-D4: Standard to slope-intercept
+
+Room: Mr. Taylor
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **TAY-D4**
+
+Convert 2x + y = 9 to slope-intercept form.
+
+(link: "A. y = -2x + 9")[(goto: "TAY Day 4 Correct")]
+
+(link: "B. y = 2x + 9")[(goto: "TAY Day 4 Wrong")]
+
+(link: "C. y = 9x - 2")[(goto: "TAY Day 4 Wrong")]
+
+(link: "D. y = -9x + 2")[(goto: "TAY Day 4 Wrong")]
+]
+
+:: TAY Day 4 Correct
+(if: $tayd4Done)[
+# TAY-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd4Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TAY-D4
+
+You win the Vault Key.
+
++6 points
+
+Correct answer: y = -2x + 9
+
+Explanation: Subtract 2x from both sides: y = -2x + 9.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 4 Wrong
+(if: $tayd4Done)[
+# TAY-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TAY-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = -2x + 9
+
+Explanation: Subtract 2x from both sides: y = -2x + 9.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 5
+(if: $tayd5Done)[
+# TAY-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+# TAY-D5: Elimination
+
+Room: Mr. Taylor
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **TAY-D5**
+
+Solve: 2x + y = 11 and 3x - y = 9
+
+(link: "A. (4, 3)")[(goto: "TAY Day 5 Correct")]
+
+(link: "B. (3, 4)")[(goto: "TAY Day 5 Wrong")]
+
+(link: "C. (2, 7)")[(goto: "TAY Day 5 Wrong")]
+
+(link: "D. (5, 1)")[(goto: "TAY Day 5 Wrong")]
+]
+
+:: TAY Day 5 Correct
+(if: $tayd5Done)[
+# TAY-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd5Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: TAY-D5
+
+You win the Vault Key.
+
++6 points
+
+Correct answer: (4, 3)
+
+Explanation: Add the equations: 5x = 20, so x = 4. Then 2(4) + y = 11, so y = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: TAY Day 5 Wrong
+(if: $tayd5Done)[
+# TAY-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+](else:)[
+(set: $tayd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: TAY-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (4, 3)
+
+Explanation: Add the equations: 5x = 20, so x = 4. Then 2(4) + y = 11, so y = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Taylor")[(goto: "TAY Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Room
+# Ms. Iglaisas: Intercept Alley
+
+Difficulty: Standard
+Prize: Intercept Token
+Value: 6 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Translate into equation
+Code: IGL-D1
+(if: $igld1Done)[Puzzle locked.](else:)[(link: "Attempt IGL-D1")[(goto: "IGL Day 1")]]
+
+## Day 2: Sign flip inequality
+Code: IGL-D2
+(if: $igld2Done)[Puzzle locked.](else:)[(link: "Attempt IGL-D2")[(goto: "IGL Day 2")]]
+
+## Day 3: Zero of a function
+Code: IGL-D3
+(if: $igld3Done)[Puzzle locked.](else:)[(link: "Attempt IGL-D3")[(goto: "IGL Day 3")]]
+
+## Day 4: Intercepts from standard form
+Code: IGL-D4
+(if: $igld4Done)[Puzzle locked.](else:)[(link: "Attempt IGL-D4")[(goto: "IGL Day 4")]]
+
+## Day 5: Number of solutions
+Code: IGL-D5
+(if: $igld5Done)[Puzzle locked.](else:)[(link: "Attempt IGL-D5")[(goto: "IGL Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: IGL Day 1
+(if: $igld1Done)[
+# IGL-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+# IGL-D1: Translate into equation
+
+Room: Ms. Iglaisas
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **IGL-D1**
+
+Translate into an equation: three more than twice a number is 17.
+
+(link: "A. 2x + 3 = 17")[(goto: "IGL Day 1 Correct")]
+
+(link: "B. 3x + 2 = 17")[(goto: "IGL Day 1 Wrong")]
+
+(link: "C. 2(x + 3) = 17")[(goto: "IGL Day 1 Wrong")]
+
+(link: "D. x + 3 = 34")[(goto: "IGL Day 1 Wrong")]
+]
+
+:: IGL Day 1 Correct
+(if: $igld1Done)[
+# IGL-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld1Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: IGL-D1
+
+You win the Intercept Token.
+
++6 points
+
+Correct answer: 2x + 3 = 17
+
+Explanation: Twice a number is 2x. Three more is 2x + 3. Is 17 means equals 17.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 1 Wrong
+(if: $igld1Done)[
+# IGL-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: IGL-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 2x + 3 = 17
+
+Explanation: Twice a number is 2x. Three more is 2x + 3. Is 17 means equals 17.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 2
+(if: $igld2Done)[
+# IGL-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+# IGL-D2: Sign flip inequality
+
+Room: Ms. Iglaisas
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **IGL-D2**
+
+Solve: -2x > 10
+
+(link: "A. x < -5")[(goto: "IGL Day 2 Correct")]
+
+(link: "B. x > -5")[(goto: "IGL Day 2 Wrong")]
+
+(link: "C. x < 5")[(goto: "IGL Day 2 Wrong")]
+
+(link: "D. x > 5")[(goto: "IGL Day 2 Wrong")]
+]
+
+:: IGL Day 2 Correct
+(if: $igld2Done)[
+# IGL-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld2Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: IGL-D2
+
+You win the Intercept Token.
+
++6 points
+
+Correct answer: x < -5
+
+Explanation: Divide by -2 and flip the inequality sign. x < -5.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 2 Wrong
+(if: $igld2Done)[
+# IGL-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: IGL-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x < -5
+
+Explanation: Divide by -2 and flip the inequality sign. x < -5.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 3
+(if: $igld3Done)[
+# IGL-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+# IGL-D3: Zero of a function
+
+Room: Ms. Iglaisas
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **IGL-D3**
+
+Find the zero of f(x) = x - 12
+
+(link: "A. x = 12")[(goto: "IGL Day 3 Correct")]
+
+(link: "B. x = -12")[(goto: "IGL Day 3 Wrong")]
+
+(link: "C. x = 0")[(goto: "IGL Day 3 Wrong")]
+
+(link: "D. x = 1")[(goto: "IGL Day 3 Wrong")]
+]
+
+:: IGL Day 3 Correct
+(if: $igld3Done)[
+# IGL-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld3Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: IGL-D3
+
+You win the Intercept Token.
+
++6 points
+
+Correct answer: x = 12
+
+Explanation: A zero happens when f(x) = 0. Set x - 12 = 0, so x = 12.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 3 Wrong
+(if: $igld3Done)[
+# IGL-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: IGL-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 12
+
+Explanation: A zero happens when f(x) = 0. Set x - 12 = 0, so x = 12.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 4
+(if: $igld4Done)[
+# IGL-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+# IGL-D4: Intercepts from standard form
+
+Room: Ms. Iglaisas
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **IGL-D4**
+
+Find the x-intercept and y-intercept of 2x + 3y = 12
+
+(link: "A. x-intercept 6, y-intercept 4")[(goto: "IGL Day 4 Correct")]
+
+(link: "B. x-intercept 4, y-intercept 6")[(goto: "IGL Day 4 Wrong")]
+
+(link: "C. x-intercept 2, y-intercept 3")[(goto: "IGL Day 4 Wrong")]
+
+(link: "D. x-intercept 3, y-intercept 2")[(goto: "IGL Day 4 Wrong")]
+]
+
+:: IGL Day 4 Correct
+(if: $igld4Done)[
+# IGL-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld4Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: IGL-D4
+
+You win the Intercept Token.
+
++6 points
+
+Correct answer: x-intercept 6, y-intercept 4
+
+Explanation: For the x-intercept, set y = 0: 2x = 12, so x = 6. For the y-intercept, set x = 0: 3y = 12, so y = 4.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 4 Wrong
+(if: $igld4Done)[
+# IGL-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: IGL-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x-intercept 6, y-intercept 4
+
+Explanation: For the x-intercept, set y = 0: 2x = 12, so x = 6. For the y-intercept, set x = 0: 3y = 12, so y = 4.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 5
+(if: $igld5Done)[
+# IGL-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+# IGL-D5: Number of solutions
+
+Room: Ms. Iglaisas
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **IGL-D5**
+
+How many solutions? y = -x + 6 and 2x + 2y = 12
+
+(link: "A. Infinite solutions")[(goto: "IGL Day 5 Correct")]
+
+(link: "B. No solution")[(goto: "IGL Day 5 Wrong")]
+
+(link: "C. One solution")[(goto: "IGL Day 5 Wrong")]
+
+(link: "D. Two solutions")[(goto: "IGL Day 5 Wrong")]
+]
+
+:: IGL Day 5 Correct
+(if: $igld5Done)[
+# IGL-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld5Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: IGL-D5
+
+You win the Intercept Token.
+
++6 points
+
+Correct answer: Infinite solutions
+
+Explanation: Simplify 2x + 2y = 12 by dividing by 2: x + y = 6, which is y = -x + 6. The lines are identical.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: IGL Day 5 Wrong
+(if: $igld5Done)[
+# IGL-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+](else:)[
+(set: $igld5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: IGL-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: Infinite solutions
+
+Explanation: Simplify 2x + 2y = 12 by dividing by 2: x + y = 6, which is y = -x + 6. The lines are identical.
+
+Current score: $score points
+
+(link: "Return to Ms. Iglaisas")[(goto: "IGL Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Room
+# Ms. Pritchert: Point-Slope Pop-A-Shot
+
+Difficulty: Standard
+Prize: Point-Slope Basketball
+Value: 6 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Solve with parentheses
+Code: PRI-D1
+(if: $prid1Done)[Puzzle locked.](else:)[(link: "Attempt PRI-D1")[(goto: "PRI Day 1")]]
+
+## Day 2: Compound inequality
+Code: PRI-D2
+(if: $prid2Done)[Puzzle locked.](else:)[(link: "Attempt PRI-D2")[(goto: "PRI Day 2")]]
+
+## Day 3: Arithmetic sequence
+Code: PRI-D3
+(if: $prid3Done)[Puzzle locked.](else:)[(link: "Attempt PRI-D3")[(goto: "PRI Day 3")]]
+
+## Day 4: Point-slope form
+Code: PRI-D4
+(if: $prid4Done)[Puzzle locked.](else:)[(link: "Attempt PRI-D4")[(goto: "PRI Day 4")]]
+
+## Day 5: Method choice
+Code: PRI-D5
+(if: $prid5Done)[Puzzle locked.](else:)[(link: "Attempt PRI-D5")[(goto: "PRI Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: PRI Day 1
+(if: $prid1Done)[
+# PRI-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+# PRI-D1: Solve with parentheses
+
+Room: Ms. Pritchert
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **PRI-D1**
+
+Solve: 2(x + 4) = 22
+
+(link: "A. x = 7")[(goto: "PRI Day 1 Correct")]
+
+(link: "B. x = 11")[(goto: "PRI Day 1 Wrong")]
+
+(link: "C. x = 3")[(goto: "PRI Day 1 Wrong")]
+
+(link: "D. x = 15")[(goto: "PRI Day 1 Wrong")]
+]
+
+:: PRI Day 1 Correct
+(if: $prid1Done)[
+# PRI-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid1Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: PRI-D1
+
+You win the Point-Slope Basketball.
+
++6 points
+
+Correct answer: x = 7
+
+Explanation: Distribute: 2x + 8 = 22. Subtract 8: 2x = 14. Divide by 2: x = 7.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 1 Wrong
+(if: $prid1Done)[
+# PRI-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: PRI-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 7
+
+Explanation: Distribute: 2x + 8 = 22. Subtract 8: 2x = 14. Divide by 2: x = 7.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 2
+(if: $prid2Done)[
+# PRI-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+# PRI-D2: Compound inequality
+
+Room: Ms. Pritchert
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **PRI-D2**
+
+Solve: -2 < x + 3 <= 8
+
+(link: "A. -5 < x <= 5")[(goto: "PRI Day 2 Correct")]
+
+(link: "B. 1 < x <= 11")[(goto: "PRI Day 2 Wrong")]
+
+(link: "C. x > -5 only")[(goto: "PRI Day 2 Wrong")]
+
+(link: "D. -5 <= x < 5")[(goto: "PRI Day 2 Wrong")]
+]
+
+:: PRI Day 2 Correct
+(if: $prid2Done)[
+# PRI-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid2Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: PRI-D2
+
+You win the Point-Slope Basketball.
+
++6 points
+
+Correct answer: -5 < x <= 5
+
+Explanation: Subtract 3 from every part: -5 < x <= 5.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 2 Wrong
+(if: $prid2Done)[
+# PRI-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: PRI-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: -5 < x <= 5
+
+Explanation: Subtract 3 from every part: -5 < x <= 5.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 3
+(if: $prid3Done)[
+# PRI-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+# PRI-D3: Arithmetic sequence
+
+Room: Ms. Pritchert
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **PRI-D3**
+
+The sequence is 4, 7, 10, 13, ... Find the next two terms.
+
+(link: "A. 16, 19")[(goto: "PRI Day 3 Correct")]
+
+(link: "B. 15, 17")[(goto: "PRI Day 3 Wrong")]
+
+(link: "C. 17, 20")[(goto: "PRI Day 3 Wrong")]
+
+(link: "D. 14, 15")[(goto: "PRI Day 3 Wrong")]
+]
+
+:: PRI Day 3 Correct
+(if: $prid3Done)[
+# PRI-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid3Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: PRI-D3
+
+You win the Point-Slope Basketball.
+
++6 points
+
+Correct answer: 16, 19
+
+Explanation: The sequence adds 3 each time. After 13 comes 16 and 19.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 3 Wrong
+(if: $prid3Done)[
+# PRI-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: PRI-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 16, 19
+
+Explanation: The sequence adds 3 each time. After 13 comes 16 and 19.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 4
+(if: $prid4Done)[
+# PRI-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+# PRI-D4: Point-slope form
+
+Room: Ms. Pritchert
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **PRI-D4**
+
+Which equation has slope 3 and passes through (2,1)?
+
+(link: "A. y - 1 = 3(x - 2)")[(goto: "PRI Day 4 Correct")]
+
+(link: "B. y - 2 = 3(x - 1)")[(goto: "PRI Day 4 Wrong")]
+
+(link: "C. y + 1 = 3(x + 2)")[(goto: "PRI Day 4 Wrong")]
+
+(link: "D. y = 3x + 1")[(goto: "PRI Day 4 Wrong")]
+]
+
+:: PRI Day 4 Correct
+(if: $prid4Done)[
+# PRI-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid4Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: PRI-D4
+
+You win the Point-Slope Basketball.
+
++6 points
+
+Correct answer: y - 1 = 3(x - 2)
+
+Explanation: Point-slope form is y - y1 = m(x - x1). Use point (2,1) and slope 3: y - 1 = 3(x - 2).
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 4 Wrong
+(if: $prid4Done)[
+# PRI-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: PRI-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y - 1 = 3(x - 2)
+
+Explanation: Point-slope form is y - y1 = m(x - x1). Use point (2,1) and slope 3: y - 1 = 3(x - 2).
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 5
+(if: $prid5Done)[
+# PRI-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+# PRI-D5: Method choice
+
+Room: Ms. Pritchert
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **PRI-D5**
+
+Which method is best for 3x + 2y = 12 and 5x - 2y = 20?
+
+(link: "A. Elimination, because the y terms cancel")[(goto: "PRI Day 5 Correct")]
+
+(link: "B. Substitution, because y is already alone")[(goto: "PRI Day 5 Wrong")]
+
+(link: "C. Graphing, because both lines are horizontal")[(goto: "PRI Day 5 Wrong")]
+
+(link: "D. No solution, because the slopes match")[(goto: "PRI Day 5 Wrong")]
+]
+
+:: PRI Day 5 Correct
+(if: $prid5Done)[
+# PRI-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid5Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: PRI-D5
+
+You win the Point-Slope Basketball.
+
++6 points
+
+Correct answer: Elimination, because the y terms cancel
+
+Explanation: The y terms are +2y and -2y. Adding the equations eliminates y immediately.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: PRI Day 5 Wrong
+(if: $prid5Done)[
+# PRI-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+](else:)[
+(set: $prid5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: PRI-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: Elimination, because the y terms cancel
+
+Explanation: The y terms are +2y and -2y. Adding the equations eliminates y immediately.
+
+Current score: $score points
+
+(link: "Return to Ms. Pritchert")[(goto: "PRI Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Room
+# Mr. K: Perpendicular Laser Tag
+
+Difficulty: Standard
+Prize: Laser Wristband
+Value: 6 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Absolute value and operations
+Code: MRK-D1
+(if: $mrkd1Done)[Puzzle locked.](else:)[(link: "Attempt MRK-D1")[(goto: "MRK Day 1")]]
+
+## Day 2: Infinite solutions
+Code: MRK-D2
+(if: $mrkd2Done)[Puzzle locked.](else:)[(link: "Attempt MRK-D2")[(goto: "MRK Day 2")]]
+
+## Day 3: Non-function from table
+Code: MRK-D3
+(if: $mrkd3Done)[Puzzle locked.](else:)[(link: "Attempt MRK-D3")[(goto: "MRK Day 3")]]
+
+## Day 4: Perpendicular slope
+Code: MRK-D4
+(if: $mrkd4Done)[Puzzle locked.](else:)[(link: "Attempt MRK-D4")[(goto: "MRK Day 4")]]
+
+## Day 5: System of inequalities
+Code: MRK-D5
+(if: $mrkd5Done)[Puzzle locked.](else:)[(link: "Attempt MRK-D5")[(goto: "MRK Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: MRK Day 1
+(if: $mrkd1Done)[
+# MRK-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+# MRK-D1: Absolute value and operations
+
+Room: Mr. K
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **MRK-D1**
+
+Simplify: | -6 | + 3^2
+
+(link: "A. 15")[(goto: "MRK Day 1 Correct")]
+
+(link: "B. 45")[(goto: "MRK Day 1 Wrong")]
+
+(link: "C. 3")[(goto: "MRK Day 1 Wrong")]
+
+(link: "D. 12")[(goto: "MRK Day 1 Wrong")]
+]
+
+:: MRK Day 1 Correct
+(if: $mrkd1Done)[
+# MRK-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd1Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MRK-D1
+
+You win the Laser Wristband.
+
++6 points
+
+Correct answer: 15
+
+Explanation: |-6| = 6 and 3^2 = 9. 6 + 9 = 15.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 1 Wrong
+(if: $mrkd1Done)[
+# MRK-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MRK-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 15
+
+Explanation: |-6| = 6 and 3^2 = 9. 6 + 9 = 15.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 2
+(if: $mrkd2Done)[
+# MRK-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+# MRK-D2: Infinite solutions
+
+Room: Mr. K
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **MRK-D2**
+
+Solve or classify: 2x + 6 = 2(x + 3)
+
+(link: "A. Infinite solutions")[(goto: "MRK Day 2 Correct")]
+
+(link: "B. No solution")[(goto: "MRK Day 2 Wrong")]
+
+(link: "C. x = 3")[(goto: "MRK Day 2 Wrong")]
+
+(link: "D. x = 0")[(goto: "MRK Day 2 Wrong")]
+]
+
+:: MRK Day 2 Correct
+(if: $mrkd2Done)[
+# MRK-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd2Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MRK-D2
+
+You win the Laser Wristband.
+
++6 points
+
+Correct answer: Infinite solutions
+
+Explanation: The right side becomes 2x + 6. The equation says 2x + 6 = 2x + 6, which is always true.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 2 Wrong
+(if: $mrkd2Done)[
+# MRK-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MRK-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: Infinite solutions
+
+Explanation: The right side becomes 2x + 6. The equation says 2x + 6 = 2x + 6, which is always true.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 3
+(if: $mrkd3Done)[
+# MRK-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+# MRK-D3: Non-function from table
+
+Room: Mr. K
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **MRK-D3**
+
+Which table is NOT a function?
+
+(link: "A. x: 1,1,2; y: 3,4,5")[(goto: "MRK Day 3 Correct")]
+
+(link: "B. x: 1,2,3; y: 3,3,3")[(goto: "MRK Day 3 Wrong")]
+
+(link: "C. x: 0,1,2; y: 5,6,7")[(goto: "MRK Day 3 Wrong")]
+
+(link: "D. x: -1,0,1; y: 4,4,4")[(goto: "MRK Day 3 Wrong")]
+]
+
+:: MRK Day 3 Correct
+(if: $mrkd3Done)[
+# MRK-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd3Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MRK-D3
+
+You win the Laser Wristband.
+
++6 points
+
+Correct answer: x: 1,1,2; y: 3,4,5
+
+Explanation: The input x = 1 has two different outputs, 3 and 4. That breaks the function rule.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 3 Wrong
+(if: $mrkd3Done)[
+# MRK-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MRK-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x: 1,1,2; y: 3,4,5
+
+Explanation: The input x = 1 has two different outputs, 3 and 4. That breaks the function rule.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 4
+(if: $mrkd4Done)[
+# MRK-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+# MRK-D4: Perpendicular slope
+
+Room: Mr. K
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **MRK-D4**
+
+A line has slope -2. What is the slope of a perpendicular line?
+
+(link: "A. 1/2")[(goto: "MRK Day 4 Correct")]
+
+(link: "B. -1/2")[(goto: "MRK Day 4 Wrong")]
+
+(link: "C. 2")[(goto: "MRK Day 4 Wrong")]
+
+(link: "D. -2")[(goto: "MRK Day 4 Wrong")]
+]
+
+:: MRK Day 4 Correct
+(if: $mrkd4Done)[
+# MRK-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd4Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MRK-D4
+
+You win the Laser Wristband.
+
++6 points
+
+Correct answer: 1/2
+
+Explanation: Perpendicular slopes are opposite reciprocals. The opposite reciprocal of -2 is 1/2.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 4 Wrong
+(if: $mrkd4Done)[
+# MRK-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MRK-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 1/2
+
+Explanation: Perpendicular slopes are opposite reciprocals. The opposite reciprocal of -2 is 1/2.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 5
+(if: $mrkd5Done)[
+# MRK-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+# MRK-D5: System of inequalities
+
+Room: Mr. K
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **MRK-D5**
+
+Which point works for both y > x - 2 and y <= -x + 4?
+
+(link: "A. (0, 0)")[(goto: "MRK Day 5 Correct")]
+
+(link: "B. (5, 5)")[(goto: "MRK Day 5 Wrong")]
+
+(link: "C. (4, -1)")[(goto: "MRK Day 5 Wrong")]
+
+(link: "D. (-3, -10)")[(goto: "MRK Day 5 Wrong")]
+]
+
+:: MRK Day 5 Correct
+(if: $mrkd5Done)[
+# MRK-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd5Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: MRK-D5
+
+You win the Laser Wristband.
+
++6 points
+
+Correct answer: (0, 0)
+
+Explanation: Test (0,0): 0 > -2 is true, and 0 <= 4 is true. So (0,0) works for both.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: MRK Day 5 Wrong
+(if: $mrkd5Done)[
+# MRK-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+](else:)[
+(set: $mrkd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: MRK-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (0, 0)
+
+Explanation: Test (0,0): 0 > -2 is true, and 0 <= 4 is true. So (0,0) works for both.
+
+Current score: $score points
+
+(link: "Return to Mr. K")[(goto: "MRK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Room
+# Mr. Wolfe: Parallel Pinball
+
+Difficulty: Standard
+Prize: Pinball Crown
+Value: 6 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Multi-step expression
+Code: WLF-D1
+(if: $wlfd1Done)[Puzzle locked.](else:)[(link: "Attempt WLF-D1")[(goto: "WLF Day 1")]]
+
+## Day 2: Variables on both sides
+Code: WLF-D2
+(if: $wlfd2Done)[Puzzle locked.](else:)[(link: "Attempt WLF-D2")[(goto: "WLF Day 2")]]
+
+## Day 3: Function notation with negative
+Code: WLF-D3
+(if: $wlfd3Done)[Puzzle locked.](else:)[(link: "Attempt WLF-D3")[(goto: "WLF Day 3")]]
+
+## Day 4: Parallel line
+Code: WLF-D4
+(if: $wlfd4Done)[Puzzle locked.](else:)[(link: "Attempt WLF-D4")[(goto: "WLF Day 4")]]
+
+## Day 5: System by graphing
+Code: WLF-D5
+(if: $wlfd5Done)[Puzzle locked.](else:)[(link: "Attempt WLF-D5")[(goto: "WLF Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: WLF Day 1
+(if: $wlfd1Done)[
+# WLF-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+# WLF-D1: Multi-step expression
+
+Room: Mr. Wolfe
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **WLF-D1**
+
+Simplify: 4(2x - 1) - 3x
+
+(link: "A. 5x - 4")[(goto: "WLF Day 1 Correct")]
+
+(link: "B. 8x - 4")[(goto: "WLF Day 1 Wrong")]
+
+(link: "C. 11x - 4")[(goto: "WLF Day 1 Wrong")]
+
+(link: "D. 5x + 4")[(goto: "WLF Day 1 Wrong")]
+]
+
+:: WLF Day 1 Correct
+(if: $wlfd1Done)[
+# WLF-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd1Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: WLF-D1
+
+You win the Pinball Crown.
+
++6 points
+
+Correct answer: 5x - 4
+
+Explanation: Distribute: 8x - 4. Then subtract 3x to get 5x - 4.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 1 Wrong
+(if: $wlfd1Done)[
+# WLF-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: WLF-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 5x - 4
+
+Explanation: Distribute: 8x - 4. Then subtract 3x to get 5x - 4.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 2
+(if: $wlfd2Done)[
+# WLF-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+# WLF-D2: Variables on both sides
+
+Room: Mr. Wolfe
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **WLF-D2**
+
+Solve: 7x + 1 = 4x + 16
+
+(link: "A. x = 5")[(goto: "WLF Day 2 Correct")]
+
+(link: "B. x = 15")[(goto: "WLF Day 2 Wrong")]
+
+(link: "C. x = -5")[(goto: "WLF Day 2 Wrong")]
+
+(link: "D. x = 17")[(goto: "WLF Day 2 Wrong")]
+]
+
+:: WLF Day 2 Correct
+(if: $wlfd2Done)[
+# WLF-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd2Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: WLF-D2
+
+You win the Pinball Crown.
+
++6 points
+
+Correct answer: x = 5
+
+Explanation: Subtract 4x: 3x + 1 = 16. Subtract 1: 3x = 15. Divide by 3: x = 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 2 Wrong
+(if: $wlfd2Done)[
+# WLF-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: WLF-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 5
+
+Explanation: Subtract 4x: 3x + 1 = 16. Subtract 1: 3x = 15. Divide by 3: x = 5.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 3
+(if: $wlfd3Done)[
+# WLF-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+# WLF-D3: Function notation with negative
+
+Room: Mr. Wolfe
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **WLF-D3**
+
+Let g(x) = -2x + 7. Find g(4).
+
+(link: "A. -1")[(goto: "WLF Day 3 Correct")]
+
+(link: "B. 15")[(goto: "WLF Day 3 Wrong")]
+
+(link: "C. 1")[(goto: "WLF Day 3 Wrong")]
+
+(link: "D. -15")[(goto: "WLF Day 3 Wrong")]
+]
+
+:: WLF Day 3 Correct
+(if: $wlfd3Done)[
+# WLF-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd3Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: WLF-D3
+
+You win the Pinball Crown.
+
++6 points
+
+Correct answer: -1
+
+Explanation: Substitute 4: g(4) = -2(4) + 7 = -8 + 7 = -1.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 3 Wrong
+(if: $wlfd3Done)[
+# WLF-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: WLF-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: -1
+
+Explanation: Substitute 4: g(4) = -2(4) + 7 = -8 + 7 = -1.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 4
+(if: $wlfd4Done)[
+# WLF-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+# WLF-D4: Parallel line
+
+Room: Mr. Wolfe
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **WLF-D4**
+
+Which line is parallel to y = 2x + 1 and passes through (3,10)?
+
+(link: "A. y = 2x + 4")[(goto: "WLF Day 4 Correct")]
+
+(link: "B. y = -2x + 16")[(goto: "WLF Day 4 Wrong")]
+
+(link: "C. y = (1/2)x + 8")[(goto: "WLF Day 4 Wrong")]
+
+(link: "D. y = 2x - 4")[(goto: "WLF Day 4 Wrong")]
+]
+
+:: WLF Day 4 Correct
+(if: $wlfd4Done)[
+# WLF-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd4Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: WLF-D4
+
+You win the Pinball Crown.
+
++6 points
+
+Correct answer: y = 2x + 4
+
+Explanation: Parallel lines have the same slope. Use y = 2x + b. Plug in (3,10): 10 = 6 + b, so b = 4.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 4 Wrong
+(if: $wlfd4Done)[
+# WLF-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: WLF-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 2x + 4
+
+Explanation: Parallel lines have the same slope. Use y = 2x + b. Plug in (3,10): 10 = 6 + b, so b = 4.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 5
+(if: $wlfd5Done)[
+# WLF-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+# WLF-D5: System by graphing
+
+Room: Mr. Wolfe
+
+Difficulty: Standard
+
+Value: 6 points
+
+Write this code on your paper before solving: **WLF-D5**
+
+Solve: y = x + 1 and y = -x + 5
+
+(link: "A. (2, 3)")[(goto: "WLF Day 5 Correct")]
+
+(link: "B. (3, 2)")[(goto: "WLF Day 5 Wrong")]
+
+(link: "C. (1, 4)")[(goto: "WLF Day 5 Wrong")]
+
+(link: "D. (5, 0)")[(goto: "WLF Day 5 Wrong")]
+]
+
+:: WLF Day 5 Correct
+(if: $wlfd5Done)[
+# WLF-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd5Done to true)(set: $score to $score + 6)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: WLF-D5
+
+You win the Pinball Crown.
+
++6 points
+
+Correct answer: (2, 3)
+
+Explanation: Set the equations equal: x + 1 = -x + 5. Then 2x = 4, so x = 2 and y = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: WLF Day 5 Wrong
+(if: $wlfd5Done)[
+# WLF-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+](else:)[
+(set: $wlfd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: WLF-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (2, 3)
+
+Explanation: Set the equations equal: x + 1 = -x + 5. Then 2x = 4, so x = 2 and y = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Wolfe")[(goto: "WLF Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Room
+# Mr. Harvey Science: Science Lab Circuit
+
+Difficulty: Advanced
+Prize: Lab Keycard
+Value: 8 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Equation with distribution
+Code: HAR-D1
+(if: $hard1Done)[Puzzle locked.](else:)[(link: "Attempt HAR-D1")[(goto: "HAR Day 1")]]
+
+## Day 2: Literal equation
+Code: HAR-D2
+(if: $hard2Done)[Puzzle locked.](else:)[(link: "Attempt HAR-D2")[(goto: "HAR Day 2")]]
+
+## Day 3: Sequence formula
+Code: HAR-D3
+(if: $hard3Done)[Puzzle locked.](else:)[(link: "Attempt HAR-D3")[(goto: "HAR Day 3")]]
+
+## Day 4: Perpendicular equation
+Code: HAR-D4
+(if: $hard4Done)[Puzzle locked.](else:)[(link: "Attempt HAR-D4")[(goto: "HAR Day 4")]]
+
+## Day 5: System word problem
+Code: HAR-D5
+(if: $hard5Done)[Puzzle locked.](else:)[(link: "Attempt HAR-D5")[(goto: "HAR Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: HAR Day 1
+(if: $hard1Done)[
+# HAR-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+# HAR-D1: Equation with distribution
+
+Room: Mr. Harvey Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **HAR-D1**
+
+Solve: 3(x - 2) + 4 = 16
+
+(link: "A. x = 6")[(goto: "HAR Day 1 Correct")]
+
+(link: "B. x = 4")[(goto: "HAR Day 1 Wrong")]
+
+(link: "C. x = 8")[(goto: "HAR Day 1 Wrong")]
+
+(link: "D. x = 10")[(goto: "HAR Day 1 Wrong")]
+]
+
+:: HAR Day 1 Correct
+(if: $hard1Done)[
+# HAR-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard1Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: HAR-D1
+
+You win the Lab Keycard.
+
++8 points
+
+Correct answer: x = 6
+
+Explanation: Distribute: 3x - 6 + 4 = 16. Combine: 3x - 2 = 16. Add 2: 3x = 18. Divide by 3: x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 1 Wrong
+(if: $hard1Done)[
+# HAR-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: HAR-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 6
+
+Explanation: Distribute: 3x - 6 + 4 = 16. Combine: 3x - 2 = 16. Add 2: 3x = 18. Divide by 3: x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 2
+(if: $hard2Done)[
+# HAR-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+# HAR-D2: Literal equation
+
+Room: Mr. Harvey Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **HAR-D2**
+
+Solve for y: 3x + y = 12
+
+(link: "A. y = -3x + 12")[(goto: "HAR Day 2 Correct")]
+
+(link: "B. y = 3x + 12")[(goto: "HAR Day 2 Wrong")]
+
+(link: "C. y = 12x - 3")[(goto: "HAR Day 2 Wrong")]
+
+(link: "D. y = 3x - 12")[(goto: "HAR Day 2 Wrong")]
+]
+
+:: HAR Day 2 Correct
+(if: $hard2Done)[
+# HAR-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard2Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: HAR-D2
+
+You win the Lab Keycard.
+
++8 points
+
+Correct answer: y = -3x + 12
+
+Explanation: Subtract 3x from both sides to isolate y: y = -3x + 12.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 2 Wrong
+(if: $hard2Done)[
+# HAR-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: HAR-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = -3x + 12
+
+Explanation: Subtract 3x from both sides to isolate y: y = -3x + 12.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 3
+(if: $hard3Done)[
+# HAR-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+# HAR-D3: Sequence formula
+
+Room: Mr. Harvey Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **HAR-D3**
+
+The sequence 6, 10, 14, 18, ... has common difference 4. What is the 8th term?
+
+(link: "A. 34")[(goto: "HAR Day 3 Correct")]
+
+(link: "B. 32")[(goto: "HAR Day 3 Wrong")]
+
+(link: "C. 30")[(goto: "HAR Day 3 Wrong")]
+
+(link: "D. 38")[(goto: "HAR Day 3 Wrong")]
+]
+
+:: HAR Day 3 Correct
+(if: $hard3Done)[
+# HAR-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard3Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: HAR-D3
+
+You win the Lab Keycard.
+
++8 points
+
+Correct answer: 34
+
+Explanation: Use the pattern. Term 1 is 6. Add 4 seven more times: 6 + 7(4) = 34.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 3 Wrong
+(if: $hard3Done)[
+# HAR-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: HAR-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 34
+
+Explanation: Use the pattern. Term 1 is 6. Add 4 seven more times: 6 + 7(4) = 34.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 4
+(if: $hard4Done)[
+# HAR-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+# HAR-D4: Perpendicular equation
+
+Room: Mr. Harvey Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **HAR-D4**
+
+Which equation is perpendicular to y = -1/3x + 2 and passes through (6,1)?
+
+(link: "A. y = 3x - 17")[(goto: "HAR Day 4 Correct")]
+
+(link: "B. y = -3x + 19")[(goto: "HAR Day 4 Wrong")]
+
+(link: "C. y = (1/3)x - 1")[(goto: "HAR Day 4 Wrong")]
+
+(link: "D. y = -1/3x + 3")[(goto: "HAR Day 4 Wrong")]
+]
+
+:: HAR Day 4 Correct
+(if: $hard4Done)[
+# HAR-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard4Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: HAR-D4
+
+You win the Lab Keycard.
+
++8 points
+
+Correct answer: y = 3x - 17
+
+Explanation: The perpendicular slope is 3. Use y = 3x + b. Plug in (6,1): 1 = 18 + b, so b = -17.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 4 Wrong
+(if: $hard4Done)[
+# HAR-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: HAR-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 3x - 17
+
+Explanation: The perpendicular slope is 3. Use y = 3x + b. Plug in (6,1): 1 = 18 + b, so b = -17.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 5
+(if: $hard5Done)[
+# HAR-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+# HAR-D5: System word problem
+
+Room: Mr. Harvey Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **HAR-D5**
+
+Tickets cost 5 dollars for students and 8 dollars for adults. A group buys 10 tickets for 62 dollars. How many student tickets were bought?
+
+(link: "A. 6 student tickets")[(goto: "HAR Day 5 Correct")]
+
+(link: "B. 4 student tickets")[(goto: "HAR Day 5 Wrong")]
+
+(link: "C. 5 student tickets")[(goto: "HAR Day 5 Wrong")]
+
+(link: "D. 8 student tickets")[(goto: "HAR Day 5 Wrong")]
+]
+
+:: HAR Day 5 Correct
+(if: $hard5Done)[
+# HAR-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard5Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: HAR-D5
+
+You win the Lab Keycard.
+
++8 points
+
+Correct answer: 6 student tickets
+
+Explanation: Let s be student tickets and a be adult tickets. s + a = 10 and 5s + 8a = 62. Substitute a = 10 - s: 5s + 8(10 - s) = 62. Then -3s + 80 = 62, so s = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: HAR Day 5 Wrong
+(if: $hard5Done)[
+# HAR-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+](else:)[
+(set: $hard5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: HAR-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 6 student tickets
+
+Explanation: Let s be student tickets and a be adult tickets. s + a = 10 and 5s + 8a = 62. Substitute a = 10 - s: 5s + 8(10 - s) = 62. Then -3s + 80 = 62, so s = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Harvey Science")[(goto: "HAR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Room
+# Ms. Bowen Science: Word Problem Whack-a-Mole
+
+Difficulty: Advanced
+Prize: Lab-Coat Mole Hammer
+Value: 8 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Expression from words
+Code: BOW-D1
+(if: $bowd1Done)[Puzzle locked.](else:)[(link: "Attempt BOW-D1")[(goto: "BOW Day 1")]]
+
+## Day 2: Absolute value equation
+Code: BOW-D2
+(if: $bowd2Done)[Puzzle locked.](else:)[(link: "Attempt BOW-D2")[(goto: "BOW Day 2")]]
+
+## Day 3: Zero and intercept
+Code: BOW-D3
+(if: $bowd3Done)[Puzzle locked.](else:)[(link: "Attempt BOW-D3")[(goto: "BOW Day 3")]]
+
+## Day 4: Linear word problem
+Code: BOW-D4
+(if: $bowd4Done)[Puzzle locked.](else:)[(link: "Attempt BOW-D4")[(goto: "BOW Day 4")]]
+
+## Day 5: System with no solution
+Code: BOW-D5
+(if: $bowd5Done)[Puzzle locked.](else:)[(link: "Attempt BOW-D5")[(goto: "BOW Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: BOW Day 1
+(if: $bowd1Done)[
+# BOW-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+# BOW-D1: Expression from words
+
+Room: Ms. Bowen Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **BOW-D1**
+
+A number n is tripled, then 8 is subtracted. Which expression matches?
+
+(link: "A. 3n - 8")[(goto: "BOW Day 1 Correct")]
+
+(link: "B. 8 - 3n")[(goto: "BOW Day 1 Wrong")]
+
+(link: "C. 3(n - 8)")[(goto: "BOW Day 1 Wrong")]
+
+(link: "D. n/3 - 8")[(goto: "BOW Day 1 Wrong")]
+]
+
+:: BOW Day 1 Correct
+(if: $bowd1Done)[
+# BOW-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd1Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BOW-D1
+
+You win the Lab-Coat Mole Hammer.
+
++8 points
+
+Correct answer: 3n - 8
+
+Explanation: Tripled means 3n. Then 8 is subtracted, giving 3n - 8.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 1 Wrong
+(if: $bowd1Done)[
+# BOW-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BOW-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 3n - 8
+
+Explanation: Tripled means 3n. Then 8 is subtracted, giving 3n - 8.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 2
+(if: $bowd2Done)[
+# BOW-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+# BOW-D2: Absolute value equation
+
+Room: Ms. Bowen Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **BOW-D2**
+
+Solve: |x| = 7
+
+(link: "A. x = 7 or x = -7")[(goto: "BOW Day 2 Correct")]
+
+(link: "B. x = 7 only")[(goto: "BOW Day 2 Wrong")]
+
+(link: "C. x = -7 only")[(goto: "BOW Day 2 Wrong")]
+
+(link: "D. no solution")[(goto: "BOW Day 2 Wrong")]
+]
+
+:: BOW Day 2 Correct
+(if: $bowd2Done)[
+# BOW-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd2Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BOW-D2
+
+You win the Lab-Coat Mole Hammer.
+
++8 points
+
+Correct answer: x = 7 or x = -7
+
+Explanation: Both 7 and -7 are 7 units from zero, so both solve |x| = 7.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 2 Wrong
+(if: $bowd2Done)[
+# BOW-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BOW-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 7 or x = -7
+
+Explanation: Both 7 and -7 are 7 units from zero, so both solve |x| = 7.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 3
+(if: $bowd3Done)[
+# BOW-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+# BOW-D3: Zero and intercept
+
+Room: Ms. Bowen Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **BOW-D3**
+
+Find the zero of f(x) = 2x - 10
+
+(link: "A. x = 5")[(goto: "BOW Day 3 Correct")]
+
+(link: "B. x = -5")[(goto: "BOW Day 3 Wrong")]
+
+(link: "C. x = 10")[(goto: "BOW Day 3 Wrong")]
+
+(link: "D. x = 2")[(goto: "BOW Day 3 Wrong")]
+]
+
+:: BOW Day 3 Correct
+(if: $bowd3Done)[
+# BOW-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd3Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BOW-D3
+
+You win the Lab-Coat Mole Hammer.
+
++8 points
+
+Correct answer: x = 5
+
+Explanation: Set f(x) = 0: 2x - 10 = 0. Then 2x = 10, so x = 5.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 3 Wrong
+(if: $bowd3Done)[
+# BOW-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BOW-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 5
+
+Explanation: Set f(x) = 0: 2x - 10 = 0. Then 2x = 10, so x = 5.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 4
+(if: $bowd4Done)[
+# BOW-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+# BOW-D4: Linear word problem
+
+Room: Ms. Bowen Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **BOW-D4**
+
+A club starts with 20 dollars and earns 6 dollars per ticket. Which equation gives total money y after x tickets?
+
+(link: "A. y = 6x + 20")[(goto: "BOW Day 4 Correct")]
+
+(link: "B. y = 20x + 6")[(goto: "BOW Day 4 Wrong")]
+
+(link: "C. y = 26x")[(goto: "BOW Day 4 Wrong")]
+
+(link: "D. y = 6x - 20")[(goto: "BOW Day 4 Wrong")]
+]
+
+:: BOW Day 4 Correct
+(if: $bowd4Done)[
+# BOW-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd4Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BOW-D4
+
+You win the Lab-Coat Mole Hammer.
+
++8 points
+
+Correct answer: y = 6x + 20
+
+Explanation: Starting money is the y-intercept, 20. Earning 6 per ticket is the slope. So y = 6x + 20.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 4 Wrong
+(if: $bowd4Done)[
+# BOW-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BOW-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 6x + 20
+
+Explanation: Starting money is the y-intercept, 20. Earning 6 per ticket is the slope. So y = 6x + 20.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 5
+(if: $bowd5Done)[
+# BOW-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+# BOW-D5: System with no solution
+
+Room: Ms. Bowen Science
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **BOW-D5**
+
+Which system has no solution?
+
+(link: "A. y = 2x + 1 and y = 2x - 5")[(goto: "BOW Day 5 Correct")]
+
+(link: "B. y = 2x + 1 and y = -2x + 1")[(goto: "BOW Day 5 Wrong")]
+
+(link: "C. y = x and y = x")[(goto: "BOW Day 5 Wrong")]
+
+(link: "D. y = 3x and y = x + 2")[(goto: "BOW Day 5 Wrong")]
+]
+
+:: BOW Day 5 Correct
+(if: $bowd5Done)[
+# BOW-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd5Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: BOW-D5
+
+You win the Lab-Coat Mole Hammer.
+
++8 points
+
+Correct answer: y = 2x + 1 and y = 2x - 5
+
+Explanation: These lines have the same slope but different y-intercepts, so they are parallel and never meet.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: BOW Day 5 Wrong
+(if: $bowd5Done)[
+# BOW-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+](else:)[
+(set: $bowd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: BOW-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 2x + 1 and y = 2x - 5
+
+Explanation: These lines have the same slope but different y-intercepts, so they are parallel and never meet.
+
+Current score: $score points
+
+(link: "Return to Ms. Bowen Science")[(goto: "BOW Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Room
+# Unknown Area: Mystery Circuit Room
+
+Difficulty: Advanced
+Prize: Mystery Fuse
+Value: 8 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Challenge simplification
+Code: UNK-D1
+(if: $unkd1Done)[Puzzle locked.](else:)[(link: "Attempt UNK-D1")[(goto: "UNK Day 1")]]
+
+## Day 2: Compound inequality
+Code: UNK-D2
+(if: $unkd2Done)[Puzzle locked.](else:)[(link: "Attempt UNK-D2")[(goto: "UNK Day 2")]]
+
+## Day 3: Function from graph description
+Code: UNK-D3
+(if: $unkd3Done)[Puzzle locked.](else:)[(link: "Attempt UNK-D3")[(goto: "UNK Day 3")]]
+
+## Day 4: Point-slope to slope-intercept
+Code: UNK-D4
+(if: $unkd4Done)[Puzzle locked.](else:)[(link: "Attempt UNK-D4")[(goto: "UNK Day 4")]]
+
+## Day 5: System of inequalities test
+Code: UNK-D5
+(if: $unkd5Done)[Puzzle locked.](else:)[(link: "Attempt UNK-D5")[(goto: "UNK Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: UNK Day 1
+(if: $unkd1Done)[
+# UNK-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+# UNK-D1: Challenge simplification
+
+Room: Unknown Area
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **UNK-D1**
+
+Simplify: 2(3x - 4) + 5(x + 1)
+
+(link: "A. 11x - 3")[(goto: "UNK Day 1 Correct")]
+
+(link: "B. 11x + 1")[(goto: "UNK Day 1 Wrong")]
+
+(link: "C. x - 3")[(goto: "UNK Day 1 Wrong")]
+
+(link: "D. 6x - 8")[(goto: "UNK Day 1 Wrong")]
+]
+
+:: UNK Day 1 Correct
+(if: $unkd1Done)[
+# UNK-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd1Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: UNK-D1
+
+You win the Mystery Fuse.
+
++8 points
+
+Correct answer: 11x - 3
+
+Explanation: Distribute: 6x - 8 + 5x + 5. Combine like terms: 11x - 3.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 1 Wrong
+(if: $unkd1Done)[
+# UNK-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: UNK-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 11x - 3
+
+Explanation: Distribute: 6x - 8 + 5x + 5. Combine like terms: 11x - 3.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 2
+(if: $unkd2Done)[
+# UNK-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+# UNK-D2: Compound inequality
+
+Room: Unknown Area
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **UNK-D2**
+
+Solve: -4 <= 2x + 2 < 10
+
+(link: "A. -3 <= x < 4")[(goto: "UNK Day 2 Correct")]
+
+(link: "B. -2 <= x < 5")[(goto: "UNK Day 2 Wrong")]
+
+(link: "C. x >= -3 only")[(goto: "UNK Day 2 Wrong")]
+
+(link: "D. -4 <= x < 10")[(goto: "UNK Day 2 Wrong")]
+]
+
+:: UNK Day 2 Correct
+(if: $unkd2Done)[
+# UNK-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd2Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: UNK-D2
+
+You win the Mystery Fuse.
+
++8 points
+
+Correct answer: -3 <= x < 4
+
+Explanation: Subtract 2 from all three parts: -6 <= 2x < 8. Divide by 2: -3 <= x < 4.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 2 Wrong
+(if: $unkd2Done)[
+# UNK-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: UNK-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: -3 <= x < 4
+
+Explanation: Subtract 2 from all three parts: -6 <= 2x < 8. Divide by 2: -3 <= x < 4.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 3
+(if: $unkd3Done)[
+# UNK-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+# UNK-D3: Function from graph description
+
+Room: Unknown Area
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **UNK-D3**
+
+A graph decreases from left to right and crosses the x-axis at x = 4. What is its zero?
+
+(link: "A. 4")[(goto: "UNK Day 3 Correct")]
+
+(link: "B. -4")[(goto: "UNK Day 3 Wrong")]
+
+(link: "C. 0")[(goto: "UNK Day 3 Wrong")]
+
+(link: "D. decreasing")[(goto: "UNK Day 3 Wrong")]
+]
+
+:: UNK Day 3 Correct
+(if: $unkd3Done)[
+# UNK-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd3Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: UNK-D3
+
+You win the Mystery Fuse.
+
++8 points
+
+Correct answer: 4
+
+Explanation: The zero is where the graph crosses the x-axis. It crosses at x = 4.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 3 Wrong
+(if: $unkd3Done)[
+# UNK-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: UNK-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 4
+
+Explanation: The zero is where the graph crosses the x-axis. It crosses at x = 4.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 4
+(if: $unkd4Done)[
+# UNK-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+# UNK-D4: Point-slope to slope-intercept
+
+Room: Unknown Area
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **UNK-D4**
+
+Convert y - 2 = 4(x - 1) to slope-intercept form.
+
+(link: "A. y = 4x - 2")[(goto: "UNK Day 4 Correct")]
+
+(link: "B. y = 4x + 2")[(goto: "UNK Day 4 Wrong")]
+
+(link: "C. y = 4x - 6")[(goto: "UNK Day 4 Wrong")]
+
+(link: "D. y = 2x - 4")[(goto: "UNK Day 4 Wrong")]
+]
+
+:: UNK Day 4 Correct
+(if: $unkd4Done)[
+# UNK-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd4Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: UNK-D4
+
+You win the Mystery Fuse.
+
++8 points
+
+Correct answer: y = 4x - 2
+
+Explanation: Distribute: y - 2 = 4x - 4. Add 2: y = 4x - 2.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 4 Wrong
+(if: $unkd4Done)[
+# UNK-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: UNK-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 4x - 2
+
+Explanation: Distribute: y - 2 = 4x - 4. Add 2: y = 4x - 2.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 5
+(if: $unkd5Done)[
+# UNK-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+# UNK-D5: System of inequalities test
+
+Room: Unknown Area
+
+Difficulty: Advanced
+
+Value: 8 points
+
+Write this code on your paper before solving: **UNK-D5**
+
+Which point satisfies both x + y <= 6 and y > x?
+
+(link: "A. (2, 3)")[(goto: "UNK Day 5 Correct")]
+
+(link: "B. (4, 3)")[(goto: "UNK Day 5 Wrong")]
+
+(link: "C. (5, 2)")[(goto: "UNK Day 5 Wrong")]
+
+(link: "D. (3, 3)")[(goto: "UNK Day 5 Wrong")]
+]
+
+:: UNK Day 5 Correct
+(if: $unkd5Done)[
+# UNK-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd5Done to true)(set: $score to $score + 8)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: UNK-D5
+
+You win the Mystery Fuse.
+
++8 points
+
+Correct answer: (2, 3)
+
+Explanation: For (2,3), x + y = 5, which is <= 6. Also 3 > 2. It satisfies both inequalities.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: UNK Day 5 Wrong
+(if: $unkd5Done)[
+# UNK-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+](else:)[
+(set: $unkd5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: UNK-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (2, 3)
+
+Explanation: For (2,3), x + y = 5, which is <= 6. Also 3 > 2. It satisfies both inequalities.
+
+Current score: $score points
+
+(link: "Return to Unknown Area")[(goto: "UNK Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Room
+# Mr. Forrest: Final Boss Cabinet
+
+Difficulty: Boss
+Prize: Golden Coordinate Snail
+Value: 12 points per correct puzzle
+
+Choose any unlocked puzzle. You may solve more than one puzzle in this room.
+
+Current score: $score points
+
+## Day 1: Boss algebra basics
+Code: FOR-D1
+(if: $ford1Done)[Puzzle locked.](else:)[(link: "Attempt FOR-D1")[(goto: "FOR Day 1")]]
+
+## Day 2: Boss inequality
+Code: FOR-D2
+(if: $ford2Done)[Puzzle locked.](else:)[(link: "Attempt FOR-D2")[(goto: "FOR Day 2")]]
+
+## Day 3: Boss functions
+Code: FOR-D3
+(if: $ford3Done)[Puzzle locked.](else:)[(link: "Attempt FOR-D3")[(goto: "FOR Day 3")]]
+
+## Day 4: Boss linear equation
+Code: FOR-D4
+(if: $ford4Done)[Puzzle locked.](else:)[(link: "Attempt FOR-D4")[(goto: "FOR Day 4")]]
+
+## Day 5: Boss systems
+Code: FOR-D5
+(if: $ford5Done)[Puzzle locked.](else:)[(link: "Attempt FOR-D5")[(goto: "FOR Day 5")]]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+
+:: FOR Day 1
+(if: $ford1Done)[
+# FOR-D1: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+# FOR-D1: Boss algebra basics
+
+Room: Mr. Forrest
+
+Difficulty: Boss
+
+Value: 12 points
+
+Write this code on your paper before solving: **FOR-D1**
+
+Solve: 2(3x - 5) - (x + 4) = 21
+
+(link: "A. x = 7")[(goto: "FOR Day 1 Correct")]
+
+(link: "B. x = 5")[(goto: "FOR Day 1 Wrong")]
+
+(link: "C. x = 6")[(goto: "FOR Day 1 Wrong")]
+
+(link: "D. x = 9")[(goto: "FOR Day 1 Wrong")]
+]
+
+:: FOR Day 1 Correct
+(if: $ford1Done)[
+# FOR-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford1Done to true)(set: $score to $score + 12)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: FOR-D1
+
+You win the Golden Coordinate Snail.
+
++12 points
+
+Correct answer: x = 7
+
+Explanation: Distribute and combine: 6x - 10 - x - 4 = 21, so 5x - 14 = 21. Add 14 to get 5x = 35. Divide by 5 to get x = 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 1 Wrong
+(if: $ford1Done)[
+# FOR-D1: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford1Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: FOR-D1
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x = 7
+
+Explanation: Distribute and combine: 6x - 10 - x - 4 = 21, so 5x - 14 = 21. Add 14 to get 5x = 35. Divide by 5 to get x = 7.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 2
+(if: $ford2Done)[
+# FOR-D2: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+# FOR-D2: Boss inequality
+
+Room: Mr. Forrest
+
+Difficulty: Boss
+
+Value: 12 points
+
+Write this code on your paper before solving: **FOR-D2**
+
+Solve: -3(x - 2) >= 18
+
+(link: "A. x <= -4")[(goto: "FOR Day 2 Correct")]
+
+(link: "B. x >= -4")[(goto: "FOR Day 2 Wrong")]
+
+(link: "C. x <= 8")[(goto: "FOR Day 2 Wrong")]
+
+(link: "D. x >= 8")[(goto: "FOR Day 2 Wrong")]
+]
+
+:: FOR Day 2 Correct
+(if: $ford2Done)[
+# FOR-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford2Done to true)(set: $score to $score + 12)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: FOR-D2
+
+You win the Golden Coordinate Snail.
+
++12 points
+
+Correct answer: x <= -4
+
+Explanation: Distribute: -3x + 6 >= 18. Subtract 6: -3x >= 12. Divide by -3 and flip the sign: x <= -4.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 2 Wrong
+(if: $ford2Done)[
+# FOR-D2: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford2Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: FOR-D2
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: x <= -4
+
+Explanation: Distribute: -3x + 6 >= 18. Subtract 6: -3x >= 12. Divide by -3 and flip the sign: x <= -4.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 3
+(if: $ford3Done)[
+# FOR-D3: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+# FOR-D3: Boss functions
+
+Room: Mr. Forrest
+
+Difficulty: Boss
+
+Value: 12 points
+
+Write this code on your paper before solving: **FOR-D3**
+
+Let f(x) = -x^2 + 10. Find f(3).
+
+(link: "A. 1")[(goto: "FOR Day 3 Correct")]
+
+(link: "B. 19")[(goto: "FOR Day 3 Wrong")]
+
+(link: "C. -19")[(goto: "FOR Day 3 Wrong")]
+
+(link: "D. 7")[(goto: "FOR Day 3 Wrong")]
+]
+
+:: FOR Day 3 Correct
+(if: $ford3Done)[
+# FOR-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford3Done to true)(set: $score to $score + 12)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: FOR-D3
+
+You win the Golden Coordinate Snail.
+
++12 points
+
+Correct answer: 1
+
+Explanation: Substitute 3: f(3) = -(3^2) + 10 = -9 + 10 = 1.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 3 Wrong
+(if: $ford3Done)[
+# FOR-D3: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford3Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: FOR-D3
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: 1
+
+Explanation: Substitute 3: f(3) = -(3^2) + 10 = -9 + 10 = 1.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 4
+(if: $ford4Done)[
+# FOR-D4: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+# FOR-D4: Boss linear equation
+
+Room: Mr. Forrest
+
+Difficulty: Boss
+
+Value: 12 points
+
+Write this code on your paper before solving: **FOR-D4**
+
+Find the equation of the line through (2,7) and (6,15).
+
+(link: "A. y = 2x + 3")[(goto: "FOR Day 4 Correct")]
+
+(link: "B. y = 3x + 2")[(goto: "FOR Day 4 Wrong")]
+
+(link: "C. y = 2x - 3")[(goto: "FOR Day 4 Wrong")]
+
+(link: "D. y = -2x + 11")[(goto: "FOR Day 4 Wrong")]
+]
+
+:: FOR Day 4 Correct
+(if: $ford4Done)[
+# FOR-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford4Done to true)(set: $score to $score + 12)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: FOR-D4
+
+You win the Golden Coordinate Snail.
+
++12 points
+
+Correct answer: y = 2x + 3
+
+Explanation: Slope = (15 - 7)/(6 - 2) = 8/4 = 2. Use y = 2x + b with (2,7): 7 = 4 + b, so b = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 4 Wrong
+(if: $ford4Done)[
+# FOR-D4: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford4Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: FOR-D4
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: y = 2x + 3
+
+Explanation: Slope = (15 - 7)/(6 - 2) = 8/4 = 2. Use y = 2x + b with (2,7): 7 = 4 + b, so b = 3.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 5
+(if: $ford5Done)[
+# FOR-D5: Puzzle Locked
+
+This puzzle has already been attempted.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+# FOR-D5: Boss systems
+
+Room: Mr. Forrest
+
+Difficulty: Boss
+
+Value: 12 points
+
+Write this code on your paper before solving: **FOR-D5**
+
+Solve: 2x + 3y = 24 and x - y = 2
+
+(link: "A. (6, 4)")[(goto: "FOR Day 5 Correct")]
+
+(link: "B. (4, 6)")[(goto: "FOR Day 5 Wrong")]
+
+(link: "C. (3, 5)")[(goto: "FOR Day 5 Wrong")]
+
+(link: "D. (5, 3)")[(goto: "FOR Day 5 Wrong")]
+]
+
+:: FOR Day 5 Correct
+(if: $ford5Done)[
+# FOR-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford5Done to true)(set: $score to $score + 12)(set: $puzzlesAttempted to $puzzlesAttempted + 1)(set: $puzzlesCorrect to $puzzlesCorrect + 1)
+# Correct: FOR-D5
+
+You win the Golden Coordinate Snail.
+
++12 points
+
+Correct answer: (6, 4)
+
+Explanation: From x - y = 2, x = y + 2. Substitute: 2(y + 2) + 3y = 24. Then 5y + 4 = 24, so 5y = 20 and y = 4. Then x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
+
+:: FOR Day 5 Wrong
+(if: $ford5Done)[
+# FOR-D5: Already Locked
+
+This puzzle was already attempted. No extra points can be earned.
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+](else:)[
+(set: $ford5Done to true)(set: $puzzlesAttempted to $puzzlesAttempted + 1)
+# Incorrect: FOR-D5
+
+No points for this puzzle. This puzzle is now locked, but the room is still open.
+
+Correct answer: (6, 4)
+
+Explanation: From x - y = 2, x = y + 2. Substitute: 2(y + 2) + 3y = 24. Then 5y + 4 = 24, so 5y = 20 and y = 4. Then x = 6.
+
+Current score: $score points
+
+(link: "Return to Mr. Forrest")[(goto: "FOR Room")]
+
+(link: "Return to Main Hall")[(goto: "Main Hall")]
+]
